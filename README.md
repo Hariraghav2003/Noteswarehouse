@@ -7,6 +7,7 @@
 - 💾 Store data in **Local Storage & Session Storage** (acting as the project’s database)  
 - 📄 Download notes as **PDF**  
 - 🌐 Hosted on **GitHub Pages**  
+👉 Live Project:  [NotesWarehouse](https://hariraghav2003.github.io/Noteswarehouse/src/index.html)
 
 ---
 
@@ -19,16 +20,15 @@
   - `localStorage` for persistent user/notes data.  
   - `sessionStorage` for session-based temporary data.  
 - 📄 **PDF Download** – Export notes in PDF format.  
-- 🎨 **Responsive UI** – Built with HTML5, CSS3, and Vanilla JavaScript.  
+- 🎨 **Responsive UI** – Built with HTML5, CSS3, and JavaScript.  
 - 🌐 **GitHub Pages Hosting** – Live and easily accessible.  
 
 ---
 
 ## 🛠️ Tech Stack  
 
-- **Frontend:** HTML5, CSS3, JavaScript (Vanilla JS)  
+- **Frontend:** HTML5, CSS3, JavaScript 
 - **Database:** Browser Storage API (`localStorage` & `sessionStorage`)  
-- **PDF:** JavaScript PDF generator (e.g., `jsPDF`)  
 - **Hosting:** GitHub Pages  
 
 ---
