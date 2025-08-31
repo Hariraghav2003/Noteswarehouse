@@ -59,10 +59,9 @@ src/
 
 3. **PDF Download**  
    - Users can select notes and download them as a PDF.  
-   - Implemented using **jsPDF** or similar library.  
 
 4. **Hosting**  
-   - Deployed on **GitHub Pages** → accessible via project’s repository.  
+   - Deployed on **GitHub Pages** → accessible via [NotesWarehouse](https://hariraghav2003.github.io/Noteswarehouse/src/index.html) .  
 
 ---
 
