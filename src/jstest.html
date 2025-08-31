@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript assessment</title>
+    <link rel="icon" type="image/x-icon" href="Favicon.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./smdevice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+        background-image: url("test.jpg");
+        background-size: cover ;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .jsassessment{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 500px;
+        border:solid hotpink 5px;
+        width: 480px;
+        height: fit-content;
+        border-radius: 20px;
+        padding: 20px 20px 15px 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+       background-color: white;
+    }
+    .submitbutton{
+        border: none;
+        color: white;
+        background-color: black;
+        text-align:center;
+        width: 100%;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    code{
+        color: hotpink ;
+
+    }
+    @media screen and (min-width:481px) and (max-width:768px) {
+        .jsassessment{
+            margin-left: 20px;
+            width: 400px;
+        }
+    }
+</style>
+<body>
+
+    <section class="jsassessment">
+        <center> <span style="font-weight: bold; font-size: larger;"> Javascript Assessment <i class="fa-solid fa-book-open" style="color: hotpink;"></i></span>   </center> <br>
+
+        <form id="quizForm" onsubmit="ansvalidation(event)" >
+            <span>
+                Q1) <br>
+                <code>
+                   varx=5,y=1 <br>
+                    var obj ={ x:10} <br> 
+                    with(obj)  <br>
+                    {  <br>
+                        alert(y)  <br>
+                    } <br>
+                </code>  
+                The output of the above code will be?
+            </span> <br>
+            <input type="radio" id="q1op1" value="1" name="q1ans">
+            <label for="q1op1">1</label> &nbsp;
+            <input type="radio" id="q1op2" value="4" name="q1ans">
+            <label for="q1op2">4</label>
+            &nbsp;
+            <input type="radio" id="q1op3" value="6" name="q1ans">
+            <label for="q1op3">6</label>
+            &nbsp;
+            <input type="radio" id="q1op4" value="0" name="q1ans" >
+            <label for="q1op4">0</label>
+            &nbsp; <hr>
+
+            <span >Q2) The "function" and " var" are known as: </span> <br>
+            <input type="radio" id="q2op1" value="Keywords" name="q2ans">
+            <label for="q2op1">Keywords</label>
+            <br>
+            <input type="radio" id="q2op2" value="Prototypes" name="q2ans">
+            <label for="q2op2">Prototypes</label>
+            <br>
+            <input type="radio" id="q2op3" value="Declaration Statements" name="q2ans">
+            <label for="q2op3">Declaration Statements </label>
+            <br>
+            <input type="radio" id="q2op4" value="Data Types" name="q2ans" >
+            <label for="q2op4">Data Types</label>
+            <br>  <hr>
+
+            <span>Q3) Which of the following type of a variable is volatile? </span> <br>
+            <input type="radio" id="q3op1" value="Mutable variable" name="q3ans">
+            <label for="q3op1"> Mutable variable </label>
+            <br>
+            <input type="radio" id="q3op2" value="Immutable variable" name="q3ans">
+            <label for="q3op2">Immutable variable</label>
+            <br> 
+            <input type="radio" id="q3op3" value="Dynamic variable" name="q3ans">
+            <label for="q3op3">Dynamic variable</label>
+            <br>
+            <input type="radio" id="q3op4" value="volatile variable" name="q3ans" >
+            <label for="q3op4">volatile variable</label>
+            <br>  <hr>
+
+            <span>Q4)In the JavaScript, which one of the following is not considered as an error: </span> <br>
+            <input type="radio" id="q4op1" value="Syntax error" name="q4ans">
+            <label for="q4op1"> Syntax error </label>
+            <br>
+            <input type="radio" id="q4op2" value="Missing of semicolons" name="q4ans">
+            <label for="q4op2">Missing of semicolons</label>
+            <br>
+            <input type="radio" id="q4op3" value="Division by zero" name="q4ans">
+            <label for="q4op3">Division by zero</label>
+            <br>
+            <input type="radio" id="q4op4" value="Missing of Bracket name="q4ans" >
+            <label for="q4op4">Missing of Bracket</label>
+            <br> <hr>
+
+            <span> What does the expression <code> document.getElementById('myInput').value </code> do?  </span> <br>
+            <input type="radio" id="q5op1" value="v1" name="q5ans">
+            <label for="q5op1"> retrieves the HTML element with the ID myInput </label>
+            <br>
+            <input type="radio" id="q5op2" value="v2" name="q5ans">
+            <label for="q5op2"> retrieves the current value of an input field with the ID myInput.</label>
+            <br>
+            <input type="radio" id="q5op3" value="v3" name="q5ans">
+            <label for="q5op3">sets the value of an input field with the ID myInput.</label>
+            <br>
+            <input type="radio" id="q5op4" value="v5" name="q5ans" >
+            <label for="q5op4">retrieves the text content of an element with the ID myInput, even if it's not an input field.</label>
+            <br> <br>
+            <button type="submit" class="submitbutton">Submit Answer</button>
+        </form>
+    </section>
+
+    <script src="./jstest.js">   </script>
+    
+</body>
+</html>

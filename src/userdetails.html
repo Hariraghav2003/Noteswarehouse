@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Userdetail</title>
+    <link rel="icon" type="image/x-icon" href="Favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <script src="footer.js"></script>
+    <link rel="stylesheet" href="./Noteswarehouse.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+    <script src="./searchbar.js"></script>
+    <link rel="stylesheet" href="./searchbar.css">
+    <link rel="stylesheet" href="./smdevice.css">
+    <link rel="stylesheet" href="./userdetails.css">
+    <link rel="stylesheet" href="./signnavbar.css">
+    <style>
+      nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items:center;
+    background-color: white;
+    flex-wrap: wrap;
+
+}
+nav ul img{
+    height: 50px;
+    width: 300px;
+}
+.searchbar{
+    border-style:solid;
+    border-color: black;
+    border-radius: 10px;
+    width: 300px;
+    
+    height: 30px;
+    
+}
+nav ul a{
+    background-color:black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
+}
+a{
+    text-decoration: none;
+}
+nav a:hover{
+  color: white;
+}
+.dropdown{
+    margin-left: 20px;
+    background-color:black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 3;
+}
+.dropdowncontent a{
+    margin: 10px;
+    text-decoration: none;
+    display:contents;
+    color: black;
+}
+.dropdown a:hover{
+  color: black;
+}
+
+.dropdown:hover .dropdowncontent{
+    cursor: pointer;
+    display: block;
+}
+.bar a{
+    display: contents;
+    color: black;
+}
+.mobilenavbar{
+    display: none;
+}
+@media screen and (min-width:481px) and (max-width:768px){
+  .dropdown{
+    display: none;
+  }
+
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li class="bar">
+
+            <span  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars fa-lg" style="background-color: white; color: black; border-style: none; margin-right: 15px;"></i></span>
+    
+            
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel" style="color: hotpink;">Notes Warehouse</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeven" >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven" >
+                      <span style="color: black;"> Computer Science and Engineering </span>  
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./sem1cse.html">Semester 1</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./sem2cse.html">Semester 2</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./sem3cse.html">Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./sem4cse.html">Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./sem5cse.html">Semester 5</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./sem6cse.html">Semester 6</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./sem7cse.html">Semester 7</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./sem8cse.html">Semester 8</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./cselab.html">Laboratories</a> <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEight">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                       <span style="color: black;"> Information Technology </span> 
+                      </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 1</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 2</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 5</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 6</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 7</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 8</a> <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingNine">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                        <span style="color: black;">   Electronics and Communication Engineering </span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 1</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 2</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 5</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 6</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 7</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 8</a> <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTen">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                        <span style="color: black;">   Electrical and Electronics Engineering </span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 1</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 2</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 5</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 6</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 7</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 8</a> <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEleven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                        <span style="color: black;">   Civil Engineering </span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 1</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 2</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 5</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 6</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 7</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 8</a> <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwelve">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                        <span style="color: black;">  Mechanical Engineering </span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 1</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 2</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 5</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 6</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 7</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 8</a> <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeventeen">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseSeventeen">
+                        <span style="color: black;">   Specalization Courses </span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="flush-headingSeventeen" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Cybersecurity</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Internet of Things</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Cloud Computing</a> <br>
+                      </div>
+                    </div>
+                    <hr style="margin-top: 0px;">
+                  </div>                  
+                </div>  
+                <div style="margin-left: 20px;"> 
+                  <a style="color:black; cursor: pointer; " onclick="signinalertwd()"> Web Development Fundamentals </a> <br> <hr style="width: 105%; margin-left: -20px;" >  
+                  <a href="" style="color:black; "> Java Fullstack </a> <br> <hr style="width: 105%; margin-left: -20px;" >  
+                  <a href="" style="color:black; ">MERN Stack </a> <br> <hr style="width: 105%; margin-left: -20px; opacity:calc(0.15); color: inherit;" > 
+                  <a href="" style="color: black;">MEAN Stack</a> <br> <hr style="width: 105%; margin-left: -20px;" > 
+                  <a href="" style="color:black; ">Python Fullstack </a> <hr style="width: 105%; margin-left: -20px; margin-bottom: 0px;"  > 
+                </div>
+              </div>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+          </li>
+            <li><a href="./index.html" style="display: contents;"> <img src="logo.png" > </a></li>
+            <li class="dropdown" >
+                Engineering Courses <i class="fa-solid fa-angle-down fa-xs"></i> 
+                <div class="dropdowncontent">
+                    <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="cse.html"> Computer Science and Engineering </a> <br>
+                    <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../HTML CSS/D4.html"> Information and Technology </a> <br>
+                    <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../HTML CSS/D5.html"> Electronics and Communication Engineering </a> <br>
+                    <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../HTML CSS/D5.html"> Electrical and Electronics Engineering </a> <br>
+                    <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../HTML CSS/D5.html"> Civil Engineering </a> <br>
+                    <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../HTML CSS/D5.html"> Mechanical Engineering </a>  <br> 
+                </div>
+            </li>
+            <li class="dropdown" style="margin-right: 200px;">
+                Technical Courses <i class="fa-solid fa-angle-down fa-xs"></i> 
+                <div class="dropdowncontent" style="width: 220px;">
+                  <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="index.html#fc">Fullstack Development </a> <br>
+                  <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a href="index.html#ui">UI/UX Design</a> <br>
+                  <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a href="index.html#wd">Web Design Course</a> <br> 
+                </div>
+            </li>
+            <div class="usersignin" id="usersignin">
+              <li>
+                <i class="fa-solid fa-xl fa-magnifying-glass" id="two" ></i>   
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Engineering Courses" class="searchbar" >
+                  <ul id="myUL">
+                    
+                  </ul>
+              </li>
+                <li><a href="./signin.html" style="margin-left:15px; text-decoration: none;" target="_blank" > Sign-in</a></li>
+                <li> <a href="./signup.html"style="margin-left:15px; text-decoration:none;" target="_blank">Sign-up </a></li>
+              </div>
+        </ul>
+    </nav>
+    <div class="ud">                 
+        <div style="margin-left: 20px;" class="coursetrack"> 
+             <h3>Track your learning</h3> <br> 
+            <a href="webdevelopment.html" style="color:black; "> Web Development Fundamentals  
+              <div id="wbpg">
+                <div class="progress" >
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" >0%</div>
+                </div>  
+              </div>  
+            </a> <br>  
+        
+            <a href="" style="color:black; "> 
+                Java Fullstack 
+                <div class="progress" id="jfpg">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                  </div> 
+            </a> <br> 
+            <a href="" style="color:black; ">
+                  MERN Stack
+                  <div class="progress" id="mepg" style="width: 800px;">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">0%</div>
+                  </div> 
+             </a> <br> 
+            <a href="" style="color: black;">
+                  MEAN Stack
+                  <div class="progress" id="mapg">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                  </div> 
+            </a> <br> 
+            <a href="" style="color:black; ">
+                Python Fullstack
+                <div class="progress" id="pfpg">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                </div> 
+            </a> 
+        </div>
+        
+        <div class="details">
+            <div class="change" >
+            <img id="uimg" class="profileimg"  src="../NotesWarehouse/profile.jpg"  height="200px" width="250px">
+            <div class="changeprofile">
+                <a  onclick="profile()">Change the profile</a> 
+                </div>
+            </div>
+    
+ 
+            <span> <i class="fa-solid fa-signature" style="color: hotpink;" ></i>  Firstname:</span> <span id="Firstname"></span> <br>
+            <span> <i class="fa-solid fa-signature" style="color: hotpink;" ></i>  Lastname:</span> <span id="Lastname"></span> <br>
+            <span> <i class="fa-solid fa-house-chimney" style="color: hotpink;" ></i>  Address:</span> <span id="Address"></span> <br>
+            <span> <i class="fa-solid fa-phone" style="color: hotpink;" ></i>  Phonenumber:</span> <span id="phonenumber"></span> <br>
+            <span> <i class="fa-solid fa-calendar-days" style="color: hotpink;" ></i> Date of Birth:</span> <span id="dob"></span> <br>
+            <span> <i class="fa-solid fa-lock" style="color: hotpink;" ></i>  Password:</span> <span id="password"></span>  <br> 
+            
+            <span id="wds"></span>
+        </div> 
+    </div>  <br>
+    <div class="userrequest">
+        <center> 
+          <h3> User Request Box </h3>
+        <form onsubmit="request()">
+          <label for="Request"></label>
+          <input type="text" placeholder="Leave Your request here" id="userrequest" required style="width: 450px; border-radius:20px; border:hotpink solid 3px;">  
+          <input type="submit" value="Submit" style="background-color: #F2618B; color: white; padding-left: 5px; padding-right: 5px; border: none; border-radius: 5px; padding-top: 3px; padding-bottom: 3px; margin-top: 10px; ">
+        </form>
+        </center>
+        
+      </div>
+    <footer>
+        <div class="updates">
+          <h1>Get Updates</h1>
+          <p> Stay in the touch with our latest notes and courses—subscribe for updates!</p>
+          <form onsubmit="userdetails()">
+            <label for="name"></label>
+            <input type="text" placeholder="Name" id="name" required>
+            <label for="email"></label>
+            <input type="text" placeholder="E-mail" id="email" required style="margin-right:10px"> 
+            <input type="submit" value="Subscribe" class="subscribebutton">
+          </form>
+        </div> 
+        <div class="aboutus">
+          <h2> About us </h2> 
+            <span><i class="fa-solid fa-location-dot"></i> India</span> <br>
+            <span> for Collaboration contact us <a href="https://mailto:hariraghava21s@gmail.com" target="_blank"> <i class="fa-solid fa-envelope"></i> </a>  </span> <br>
+            <span> Support & Follow us <a href="https://www.instagram.com/hariraghav_hr/profilecard/?igsh=MWpndzR0bTB1b243aw==" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>  <a href="https://x.com/Hariraghav2003?t=kr08Z5q3mydajSF7op67tg&s=08" target="_blank"> <i class="fa-brands fa-x-twitter"></i> </a> <a href="https://discordapp.com/users/972496342939222036/" target="_blank"> <i class="fa-brands fa-discord"></i> </a> </span> <br>
+            <span>For any queries contact us <i class="bi bi-headset fa-lg" onclick="support()" style="cursor: pointer;"></i> </span>
+        </div> 
+        
+        <div class="services">
+            <h2> Our Services: </h2> 
+            <a href="index.html#fc">  <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Fullstack Courses <br> </a>
+            <a href="index.html#wd"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp;  Webdesign Courses <br> </a>
+            <a href="index.html#ui"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; UI/UX Design <br> </a>
+            <a onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp;  Data Science <br> </a>
+        </div>
+        <div class="d" >
+          <a href="./cse.html"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Computer Science and Engineering <br> </a>
+          <a  onclick="development()" style="cursor: progress;">  <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;" ></i> &nbsp; Information Technology <br> </a>
+          <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Electronics and Communications Enginnering <br> </a>
+          <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Electrical and Electronics Enginnering <br> </a>
+          <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Civil Engineering <br> </a>
+          <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Mechanical Engineering <br> </a> 
+        </div>
+        <div class="icon">
+          <img src="./Favicon.jpg" height="190px" width="150px">
+        </div>
+    </footer>  
+    <script>
+      const log=localStorage.getItem("loggedin");
+      const userid = JSON.parse(localStorage.getItem(log));
+      console.log(userid);
+       function getud(){
+          
+            if(userid!=null){
+                let img= document.getElementById("uimg");
+                const prof=userid.profilepic;
+                if(!prof){
+
+                }
+                else{
+                  img.src=prof;
+                }
+     
+                document.getElementById("Firstname").innerHTML=userid.Firstname;
+                document.getElementById("Lastname").innerHTML=userid.Lastname;
+                document.getElementById("Address").innerHTML=userid.address;
+                document.getElementById("dob").innerHTML=userid.dob;
+                document.getElementById("password").innerHTML=userid.password;
+                document.getElementById("phonenumber").innerHTML=userid.phonenumber;
+            }
+        };
+        getud();
+        let h=userid.htmlscore;
+        let c=userid.cssscore;
+        let j=userid.jsscore;
+        let htmltestscore=parseInt(h,10);
+        console.log(htmltestscore);
+        let csstestscore=parseInt(c,10);
+        let jstestscore=parseInt(j,10);
+
+      
+        const wdpg=document.getElementById("wbpg");
+         if(htmltestscore<=5){
+           wdpg.innerHTML= `
+            <div class="progress" >
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" >25%</div>
+           </div>
+           `
+        }
+       if(csstestscore<=5 && htmltestscore<=5){
+           wdpg.innerHTML=  `
+            <div class="progress" >
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" >50%</div>
+           </div>
+           `
+        }
+       if(jstestscore<=5 && htmltestscore<=5 && csstestscore<=5 ){
+          wdpg.innerHTML= `<div class="progress" >
+                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" >100%</div>
+           </div>
+           `
+           let webdevelopmenttot=htmltestscore+csstestscore+jstestscore;
+           console.log(webdevelopmenttot);
+            if(webdevelopmenttot>=9 && webdevelopmenttot<=12){
+              document.getElementById("wds").innerHTML=`<span><i class="bi bi-card-list fa-lg fa-solid" style="color:hotpink"></i> Webdevelopment Totalscore:<span id="tot"></span> <i class="fa-solid fa-medal fa-rotate-180" style="color: #CE8946></i> </span>`
+              document.getElementById("tot").innerHTML=webdevelopmenttot;
+            }
+            if(webdevelopmenttot>12 && webdevelopmenttot<=14){
+              document.getElementById("wds").innerHTML=`<span><i class="bi bi-card-list fa-lg fa-solid" style="color:hotpink"></i> Webdevelopment Totalscore:<span id="tot"></span> <i class="fa-solid fa-medal fa-rotate-180" style="color:#C0C0C0"></i> </span>`
+              document.getElementById("tot").innerHTML=webdevelopmenttot;
+            }
+            if(webdevelopmenttot==15){
+              document.getElementById("wds").innerHTML=`<span><i class="bi bi-card-list fa-lg fa-solid" style="color:hotpink"></i> Webdevelopment Totalscore:<span id="tot"></span> <i class="fa-solid fa-medal fa-rotate-180" style="color:#EFBF04"></i> </span>`
+              document.getElementById("tot").innerHTML=webdevelopmenttot;
+            }
+            userid.webdevelopmenttotalscore=webdevelopmenttot;
+            localStorage.setItem(log,JSON.stringify(userid));
+        }
+
+        async function profile(){
+            const login=localStorage.getItem("loggedin");
+            console.log(login);
+            const ud=JSON.parse(localStorage.getItem(login));
+            console.log(ud);
+            const { value: file } = await Swal.fire({
+                title: "Upload your profile picture",
+                input: "file",
+                inputAttributes: {
+                    "accept": "image/*",
+                    "aria-label": ""
+                },
+            showCancelButton: true
+            });
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                console.log("Upload your profile picture:", e.target.result);
+                let img= document.getElementById("uimg");
+                img.src=e.target.result;
+                ud.profilepic=e.target.result;
+                localStorage.setItem(login,JSON.stringify(ud));
+                };
+                reader.readAsDataURL(file);
+
+                location.reload();
+            }
+        }
+        const s=localStorage.getItem("status");
+        console.log(typeof s);
+        if(s==0){
+          location.replace("index.html");
+        }
+    </script>
+    <script src="signinchecknav.js">
+    </script>
+    <script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+.transition{
+    background-color: red; 
+    color: azure;
+    width:100px;
+    height: 100px;
+    text-align: center;
+    transition: width 3s;
+    padding: 30px;
+    }
+    .transition:hover{
+        width:300px;
+    }
+    .transitiondelay{
+    background-color: red; 
+    color: azure;
+    width:100px;
+    height: 100px;
+    text-align: center;
+    transition: width 3s;
+    padding: 30px;
+    transition-delay: 5s;
+    }
+    .transitiondelay:hover{
+        width:300px;
+    }
+    .transitionduration{
+        background-color: red; 
+        color: azure;
+        width:100px;
+        height: 100px;
+        text-align: center;
+        transition: width 3s;
+        padding: 30px;
+        transition-duration: 8s;
+    }
+    .transitionduration:hover{
+        width:300px;
+    }
+
+    .transitionproperty{
+        background-color: red; 
+        color: azure;
+        width:100px;
+        height: 100px;
+        text-align: center;
+        transition-property: width;
+        transition: width 3s;
+        padding: 30px;
+        transition-duration: 8s;
+    }
+    .transitionproperty:hover{
+        width:300px;
+        height: 300px;
+    }
+
+    .linear{
+        background-color: red; 
+        color: azure;
+        width:100px;
+        text-align: center;
+        transition: width 3s;
+        transition-duration: 8s;
+        transition-timing-function: linear;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10PX;
+    }
+    .linear:hover{
+        width:300px;
+    }
+
+    .ease{
+        background-color: red; 
+        color: azure;
+        width:100px;
+        text-align: center;
+        transition: width 3s;
+        transition-duration: 8s;
+        transition-timing-function: ease;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10PX;
+    }
+    .ease:hover{
+        width:300px;
+    }
+
+    .easein{
+        background-color: red; 
+        color: azure;
+        width:100px;
+        text-align: center;
+        transition: width 3s;
+        transition-duration: 8s;
+        transition-timing-function: ease-in;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10PX;
+    }
+    .easein:hover{
+        width:300px;
+    }
+
+    .easeout{
+        background-color: red; 
+        color: azure;
+        width:100px;
+        text-align: center;
+        transition: width 3s;
+        transition-duration: 8s;
+        transition-timing-function: ease-out;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10PX;
+    }
+    .easeout:hover{
+        width:300px;
+    }
+
+    .easeinout{
+        background-color: red; 
+        color: azure;
+        width:100px;
+        text-align: center;
+        transition: width 3s;
+        transition-duration: 8s;
+        transition-timing-function: ease-in-out;
+        padding: 10px;
+    
+    }
+    .easeinout:hover{
+        width:300px;
+    }
+
+    .animation{
+        background-color: red;
+        color: white;
+        padding: 10px;
+        width:fit-content;
+        position: relative;
+        border-radius: 5px;
+        animation-name: example;
+        animation-duration:4s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes example {
+        0% {left:0px;}
+        25%{left:200px}
+        50%{left:200px; top:200px}
+        75%{left:0px;top:200px}
+        100%{left:0px;top:0px}
+        
+    }

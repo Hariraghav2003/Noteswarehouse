@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flexbox</title>
+    <style>
+        body{
+            font-size: 16px;
+        }
+        .flexcontainer{
+            display: flex;
+            background-color: dodgerblue;
+        }
+
+        .flexcontainer>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px;
+        }
+        .flexcontainerdirectioncolumn{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;
+            flex-direction: column;
+            width: fit-content;
+        }
+
+        .flexcontainerdirectioncolumn>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px;
+          
+        }
+
+        .flexcontainerdirectioncolumnrev{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;
+            flex-direction: column-reverse;
+            width: fit-content;
+        }
+        .flexcontainerdirectioncolumnrev>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px;
+          
+        }
+
+        .flexcontainerdirectionrow{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;
+            flex-direction: row;
+            width: fit-content;
+        }
+        .flexcontainerdirectionrow>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px;
+          
+        }
+
+        .flexcontainerdirectionrowrev{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;
+            flex-direction: row-reverse;
+            width: fit-content;
+        }
+        .flexcontainerdirectionrowrev>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px;
+          
+        }
+
+        .flexcontainerwrap{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;
+            width: fit-content;
+            flex-wrap: wrap;
+        }
+        .flexcontainerwrap>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px;
+          
+        }
+
+        .flexcontainerwraprev{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;
+            width: fit-content;
+            flex-wrap: wrap-reverse;
+        }
+        .flexcontainerwraprev>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px;
+          
+        }
+
+        .flexcontainernowrap{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;
+            width: fit-content;
+            flex-wrap:nowrap;
+        }
+        .flexcontainernowrap>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px; 
+        }
+
+        .flexitemcenter{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;
+           
+            justify-content: center;
+        }
+        .flexitemcenter>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px; 
+        }
+
+        .flexitemflexstart{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;    
+            justify-content:flex-start;
+        }
+        .flexitemflexstart >div{
+            background-color: white;
+            margin:10px;
+            padding: 5px; 
+        }
+
+        .flexitemflexend{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;    
+            justify-content:flex-end;
+        }
+        .flexitemflexend>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px; 
+        }
+
+        .flexitemspacear{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;    
+            justify-content:space-around;
+        }
+        .flexitemspacear>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px; 
+        }
+        
+        .flexitemspacebet{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;    
+            justify-content:space-between;
+        }
+        .flexitemspacebet>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px; 
+        }
+
+        .alignitemcenter{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue; 
+            height: 200px;   
+            align-items:center;
+        }
+        .alignitemcenter>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px; 
+        }
+
+        .alignitemleft{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: dodgerblue;   
+            height: 200px;  
+            align-items:flex-start;
+        }
+        .alignitemleft>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px; 
+        }
+
+        
+        .alignitemright{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 200px; 
+            background-color: dodgerblue;    
+            align-items:flex-end;
+        }
+        .alignitemright>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px; 
+        }
+
+        .alignitemstrech{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 200px; 
+            background-color: dodgerblue;    
+            align-items:stretch;
+        }
+        .alignitemstrech>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px; 
+        }
+
+        .alignitembaseline{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 200px; 
+            background-color: dodgerblue;    
+            align-items:baseline;
+        }
+        .alignitembaseline>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px;
+        }
+
+        .aligncontentc{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 200px; 
+            background-color: dodgerblue;   
+            align-items:center ;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .aligncontentc>div{
+            background-color: white;
+            margin:10px;
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>The flex box is used to create a flexible and responsive web pages which has many properties</p>
+    <p>To work with flexbox first wee need to create a flexcontainer</p>
+    <p>Next,we need to create flexitems</p>
+    <div class="flexcontainer">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <p>
+        ---bluebackground-flexcontainer <br>
+        ---whitecolorbackground-flexitems
+    </p>
+    <p>
+        The flex container(blue background) has 6 properties,
+        <ul style="list-style-type: decimal;">
+            <li>Flex-direction</li>
+            <li>flex-wrap</li>
+            <li>flex-flow</li>
+            <li>Justify content</li>
+            <li>Align-items</li>
+            <li>align-content</li>
+        </ul>
+    </p>
+    <h3>The Flex-direction</h3>
+    <p> The flex direction is used to define the direction of the container this flex direction has 4 properties </p>
+    <b>1.Column:aligns the flex container in vertical direction like the below container </b>
+    <div class="flexcontainerdirectioncolumn">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <b>2.Column reverse:Aligns the flex container in vertical direction but flexitems will be in reverse drection  </b>
+    <div class="flexcontainerdirectioncolumnrev">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <b>3.Row:Aligns the flexcontainer in horizontal direction which is a default one</b>
+    <div class="flexcontainerdirectionrow">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <b>4.Row-reverse:Aligns the flexcontainer in horizontal direction but flex items will be in reverse direction</b>
+    <div class="flexcontainerdirectionrowrev">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <hr style="border-bottom:2px ; border-style:solid ; border-color:black;">
+    <h3>The Flex wrap</h3>
+    <p>The flex wrap property is used to create web pages more responsive which has 3 properties</p>
+    <b>1.Wrap:used to wrap the flexcontainer and flexitems to appear neatly when we shrink or resize the window Ex,</b>
+    <div class="flexcontainerwrap">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+        <div> flexitem 5 </div> 
+        <div> flexitem 6 </div> 
+        <div> flexitem 7 </div> 
+        <div> flexitem 8 </div>    
+        <div> flexitem 9 </div> 
+        <div> flexitem 10 </div> 
+    </div>
+    <p>If we resize the webpage screen the above flexcontainer and flexitems will wrap which will be neat and attractive</p>
+    <b>2.Wrapreverse:used to wrap the flex container to appear neatly when we shrink or resize the window but the flex items will be wrapped in reverse order Ex,</b>
+    <div class="flexcontainerwraprev">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+        <div> flexitem 5 </div> 
+        <div> flexitem 6 </div> 
+        <div> flexitem 7 </div> 
+        <div> flexitem 8 </div>    
+        <div> flexitem 9 </div> 
+        <div> flexitem 10 </div> 
+    </div>
+    <p>If we resize the webpage screen the above flexcontainer and flexitems will wrap which will be neat and attractive but the items will be in reverse order</p>
+    <b>3.No Wrap:wil not wrap the flexcontainer and flexitems if we shrink or resize the window which is a default one Ex,</b>
+    <div class="flexcontainernowrap">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+        <div> flexitem 5 </div> 
+        <div> flexitem 6 </div> 
+        <div> flexitem 7 </div> 
+        <div> flexitem 8 </div>    
+        <div> flexitem 9 </div> 
+        <div> flexitem 10 </div> 
+    </div>
+    <p>If we resize the webpage screen the above flexcontainer and flexitems will not wrap </p>
+    <hr style="border-bottom:2px ; border-style:solid ; border-color:black;">
+    <h3>The Flex flow</h3>
+    <p>
+        The flex flow is the shorthand property of the above two properties which combines the flex wrap and flex direction properties through this 
+        we can write a single line of code like this <mark>flex-flow:row wrap</mark> this line means setting the flex container in horzontal direction and wraping
+        the flexcontainer and flexitems.
+    </p>
+    <hr style="border-bottom:2px ; border-style:solid ; border-color:black;">
+    <h3>The Justify content</h3>
+    <p>The justify content is used to align flex items horizontally which has 5 properties</p>
+    <b>1.center: used to center align the flex items Ex,</b>
+    <div class="flexitemcenter">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <b>2.flex-start: used to left (Starting of the flexcontainer) align the flex items Ex,</b>
+    <div class="flexitemflexstart">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <b>3.flex-start: used to right (ending of the flexcontainer) align the flex items Ex,</b>
+    <div class="flexitemflexend">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <b>4.space-around: used to provide space around the flex items Ex,</b>
+    <div class="flexitemspacear">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <b>5.space-between: used to provide space between the flex items Ex,</b>
+    <div class="flexitemspacebet">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <hr style="border-bottom:2px ; border-style:solid ; border-color:black;">
+    <h3>The align items</h3>
+    <p>The align items is used to align flex items vertically which has 5 properties</p>
+    <b>1.center: used to center align the flex items vertically Ex,</b>
+    <div class="alignitemcenter">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <b>2.flex-start: used to left (top of the flexcontainer) align the flex items vertically Ex,</b>
+    <div class="alignitemleft">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <b>3.flex-end: used to right (bottom of the flexcontainer) align the flex items vertically Ex,</b>
+    <div class="alignitemright">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <b>4.stretch: used to stretch the flex items which is default Ex,</b>
+    <div class="alignitemstrech">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <b>5.baseline: used to align  the flex items by text baseline Ex,</b>
+    <div class="alignitembaseline">
+        <div>flexitem 1 </div>
+        <div style="font-size: 20px;">flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+    </div>
+    <p>here the fontsize of flexitem2 is larger so based on thhis item base line other items are arranged</p>
+    <hr style="border-bottom:2px ; border-style:solid ; border-color:black;">
+    <h3>The align content</h3>
+    <p>The align content is used to align flex items both vertically and horizontally a combination of justify content and align-items </p>
+    <h3>The Perfect Centering</h3>
+    <p>For a perfect centering we use <mark> align-items:center ; justify-content: center; </mark></p>
+    <div class="aligncontentc">
+        <div>flexitem 1 </div>
+        <div>flexitem 2</div>
+        <div> flexitem 3 </div> 
+        <div> flexitem 4 </div> 
+        <div> flexitem 5 </div> 
+        <div> flexitem 6 </div> 
+        <div> flexitem 7 </div> 
+        <div> flexitem 8 </div>    
+        <div> flexitem 9 </div> 
+        <div> flexitem 10 </div> 
+    </div>
+</body>
+</html>

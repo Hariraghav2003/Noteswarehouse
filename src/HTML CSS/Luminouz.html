@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINOUZ</title>
+    <link rel="icon" type="image/x-icon" href="../HTML CSS/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="../HTML CSS/Luminouz.css">
+    <link rel="stylesheet" href="../smdevice.css">
+    <style>
+      .contactbutton:hover{
+        color: white;
+        background-color: #F2618B;
+        border-radius: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+      }
+      .termsbutton:hover{
+        color: white;
+        background-color: #F2618B;
+        border-radius: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+      }
+      .line{
+        border-bottom: solid white;
+        width: 100px;    
+      }
+      .mobilenav{
+        display: none;
+      }
+
+      .text{
+        position: absolute;
+        color: black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .text a{
+        background-color: #F2618B;
+        padding: 10px;
+        color: white;
+      }
+      .textone{
+        position: absolute;
+        color: black;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+      }
+      .textone a{
+        background-color: #F2618B;
+        padding: 10px;
+        color: white;
+      }
+      .footersm2{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+      }
+      .footersm1{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      @media screen and (min-width:481px) and (max-width:768px) {
+        body{
+          margin: 0px;
+          padding: 20px;
+        }
+        .poster{
+          font-size: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-content: center;
+          background-image: url("spot-light-background_1284-4685.jpg"  );
+          background-size: 700px;
+          background-repeat: no-repeat;
+          height: 600px;
+          background-position: center;
+        }
+        .mobilenav{
+          display: block;
+        }
+        .mobilenav li{
+          margin-left: -20px;
+        }
+        .container-fluid{
+          display: none;
+        }
+        .mobilenav ul{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          list-style-type: none;
+          align-items: center;
+          background-color: white;
+          align-content: center;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 300px;
+          width: 480px;
+
+        }
+        .container img{
+          height: 300px;
+          width: 100px;
+        }
+  
+        .one{
+          margin-left:0px;
+        }
+        .two{
+          margin-left: 0px;
+        }
+        .three{
+          margin-left: 0px;
+        }
+        footer{
+          display: none;
+        }
+
+        .footersm2{
+        display: flex;
+        align-items: space-evenly;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+      }
+      .footersm1>img{
+        margin: 15px;
+      }
+      .footersm2>img{
+        margin: 15px;
+      }
+      .footersm1{
+        display: flex;
+       align-items: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .container{
+        display: none;
+      }
+        
+      }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <ul>
+            <li>
+                <span style="font-size:25px; font-weight: bolder; padding-right:730px; height: 50px;">
+                    <img src="../HTML CSS/logo.png" height="50px" width="50px"> LUMINOUZ
+                </span>
+            </li>
+            <li><a href="#" class="homebutton">Home</a></li>
+            <li><a href="#" class="contactbutton">Contact</a></li>
+            <li><a href="#"class="termsbutton">Terms and Conditions</a></li>
+            <li><i class="fa-solid fa-cart-shopping fa-lg"></i></li>
+            <li><i class="fa-solid fa-lg fa-magnifying-glass"></i></li>
+        </ul>
+    </div>
+    <div class="mobilenav">
+      <ul>
+          <li>
+              <span style="font-size:25px; font-weight: bolder; padding-right:730px; height: 50px;">
+                  <img src="../HTML CSS/logo.png" height="50px" width="50px"> LUMINOUZ
+              </span>
+          </li>
+
+      </ul>
+    </div>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="padding-top: 40px; width:800px; padding-bottom:40px;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../HTML CSS/zpstock-image-982.jpg"  style="opacity: 0.7;"  height="400px"  class="d-block w-100" alt="...">
+                <p class="textone"> 
+                  <span style="color: #F2618B;  font-size:60px;font-family: 'Times New Roman', Times, serif;"> 
+                    LUMINOUZ IS <br> MODERN LIKE YOU 
+                  </span>  <br> <br>
+                  <span style="font-family: 'Times New Roman', Times, serif; font-size: larger;">At Luminouz, we love to help you find the just-right pieces that show off </span><br> <br>
+                  
+                  <a href="#product" style="color: #F5F5F5; font-family: 'Times New Roman', Times, serif;">Shop now</a> 
+                </p> 
+              </div>
+              <div class="carousel-item">
+            
+                <img src="../HTML CSS/zpstock-image-980.jpg" height="400px"  class="d-block w-100" style="position:relative; z-index:0; border: solid whitesmoke 1px;">
+                <p class="text"> 
+                  <span style="font-weight:bolder; font-size:50px; font-family: 'Times New Roman', Times, serif;"> Black Friday Sale </span>  <br> <br>
+                  <span style="font-weight:bolder; font-size:35px; font-family: 'Times New Roman', Times, serif;">Save upto 50%</span><br> <br>
+                  <span style="font-size: smaller; margin-left: 7px;"> We have thousands of designs and you have limited period of time </span>    <br> <br>
+                  <a href="#product" style="color: #F5F5F5; font-family: 'Times New Roman', Times, serif;">Shop now</a> 
+                </p> 
+              </div>
+     
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="row text-center m-4 border-bottom  ">
+        <div class="col border-end pb-3">
+            <h5>Free Shipping</h5>
+            You can edit text on your website by double clicking on a text box on your website
+        </div>
+        <div class="col border-end">
+            <h5>Easy Return</h5>
+            You can edit text on your website by double clicking on a text box on your website
+        </div>
+        <div class="col ">
+            <h5>24hrs Support</h5>
+            You can edit text on your website by double clicking on a text box on your website
+        </div>
+    </div>
+    <div class="text-center pt-3 pb-3 ">
+        <h1>Our Top Categories</h1>
+    </div>
+   <div class="try pb-5">
+    <div class="accordion"  id="accordionExample">
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header d-flex justify-content-center" id="headingOne">
+          <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+           <span class="one">
+            Street Lights
+           </span> 
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div id="Bedroomlights" class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                    <img src="../HTML CSS/400x400 (2).png" class="card-img-top" alt="..." style="display: block;">
+                    <div class="product">
+                      <br> <br>
+                     
+                         <a href="#" class="ac" > <span class="acbutton"> <span class="acbutton"> Add to cart  </span>  </span>  </a>
+           
+                        
+                   
+                      <br>
+                      <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+                    </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-center  mt-2">Street Junction Light</h5>
+                    <p class="card-text text-center">$1,576.00</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+              <div class="card">
+                <img src="../HTML CSS/400x400.png" class="card-img-top" alt="...">
+                <div class="product">
+                  <br> <br>
+                  <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+                  <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center mt-2">Combount wall lamp</h5>
+                  <p class="card-text text-center">$345.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../HTML CSS/400x400 (1).png" class="card-img-top" alt="...">
+                <div class="product">
+                  <br> <br>
+                  <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+                  <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center mt-2">Street Light Frame</h5>
+                  <p class="card-text text-center ">$123.00 <span style="text-decoration: line-through;">$193.00</span></p>
+                </div>
+              </div>
+            </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <span class="two">
+              Bedroom Lights
+            </span>
+            
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div id="streetlights" class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="../HTML CSS/400x400 (6).png" class="card-img-top" alt="...">
+                  <div class="product">
+                    <br> <br>
+                    <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+                    <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-center mt-2">Living Room, Bedroom Table Lamp</h5>
+                    <p class="card-text text-center">$320.00</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+              <div class="card">
+                <img src="../HTML CSS/400x400 (7).png" class="card-img-top" alt="...">
+                <div class="product">
+                  <br> <br>
+                  <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+                  <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center mt-2">Bedroom Study Lamp</h5>
+                  <p class="card-text text-center">$155.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../HTML CSS/400x400 (8).png" class="card-img-top" alt="..." style="align-items: center;">
+                <div class="product">
+                  <br> <br>
+                  <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+                  <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table Lamp</h5>
+                  <p class="card-text text-center">$230.00</p>
+                </div>
+              </div>
+            </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item border-0 ">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <span class="three">
+              LED Lights
+            </span>
+            
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div id="LEDlights" class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="../HTML CSS/400x400 (9).png" class="card-img-top" alt="...">
+                  <div class="product">
+                    <br> <br>
+                    <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+                    <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-center mt-2">Living Room, Bedroom Table Lamp</h5>
+                    <p class="card-text text-center">$320.00</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+              <div class="card">
+                <img src="../HTML CSS/400x400 (10).png" class="card-img-top" alt="...">
+                <div class="product">
+                  <br> <br>
+                  <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+                  <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center mt-2">Bedroom Study Lamp</h5>
+                  <p class="card-text text-center">$155.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../HTML CSS/400x400 (11).png" class="card-img-top" alt="..." style="align-items: center;">
+                <div class="product">
+                  <br> <br>
+                  <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+                  <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table Lamp</h5>
+                  <p class="card-text text-center">$230.00</p>
+                </div>
+              </div>
+            </div>
+          
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+   </div>
+   <div class="poster">
+      <h2 style="font-weight: bolder;">EXCLUSIVELY</h2>
+      <h4>AT LUMINOUZ</h4>
+      <p>Entire brands, individual designs and custom finishesyou'll only find at Lumens</p>
+      <a href="#" target="_blank" class="posterbutton"> <i class="fa-solid fa-cart-shopping fa-xs"></i> Shop Now >> </a>
+   </div>
+   <div class="shop pt-3 pb-2" id="product">
+     <h1>Our Products</h1>
+   </div>
+   <div class="products pb-5">
+    <div id="streetlights" class="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-3">
+      <div class="col">
+        <div class="card">
+          <img src="../HTML CSS/400x400 (2).png" class="card-img-top" alt="...">
+          <div class="product">
+            <br> <br>
+            <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+            <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center mt-2">Street Junction Light</h5>
+            <p class="card-text text-center">$1200.00</p>
+          </div>
+        </div>
+      </div>
+    <div class="col">
+      <div class="card">
+        <img src="../HTML CSS/400x400.png" class="card-img-top" alt="...">
+        <div class="product">
+          <br> <br>
+          <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+          <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center mt-2">Combount wall lamp</h5>
+          <p class="card-text text-center">$180.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../HTML CSS/400x400 (1).png" class="card-img-top" alt="..." style="align-items: center;">
+        <div class="product">
+          <br> <br>
+          <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+          <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Street Light Frame</h5>
+          <p class="card-text text-center">$132.00</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="Bedroomlights" class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+      <div class="col">
+        <div class="card">
+          <img src="../HTML CSS/400x400 (6).png" class="card-img-top" alt="...">
+          <div class="product">
+            <br> <br>
+            <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+            <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center mt-2">Living Room, Bedroom Table Lamp</h5>
+            <p class="card-text text-center">$320.00</p>
+          </div>
+        </div>
+      </div>
+    <div class="col">
+      <div class="card">
+        <img src="../HTML CSS/400x400 (7).png" class="card-img-top" alt="...">
+        <div class="product">
+          <br> <br>
+          <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+          <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center mt-2">Bedroom Study Lamp</h5>
+          <p class="card-text text-center">$155.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../HTML CSS/400x400 (8).png" class="card-img-top" alt="..." style="align-items: center;">
+        <div class="product">
+          <br> <br>
+          <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+          <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Table Lamp</h5>
+          <p class="card-text text-center">$230.00</p>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+
+    <div id="LEDlights" class="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-3">
+      <div class="col">
+        <div class="card">
+          <img src="../HTML CSS/400x400 (9).png" class="card-img-top" alt="...">
+          <div class="product">
+            <br> <br>
+            <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+            <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center mt-2">Living Room, Bedroom Table Lamp</h5>
+            <p class="card-text text-center">$320.00</p>
+          </div>
+        </div>
+      </div>
+    <div class="col">
+      <div class="card">
+        <img src="../HTML CSS/400x400 (10).png" class="card-img-top" alt="...">
+        <div class="product">
+          <br> <br>
+          <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+          <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center mt-2">Bedroom Study Lamp</h5>
+          <p class="card-text text-center">$155.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../HTML CSS/400x400 (11).png" class="card-img-top" alt="..." style="align-items: center;">
+        <div class="product">
+          <br> <br>
+          <a href="#" class="ac" > <span class="acbutton"> Add to cart  </span> </a> <br>
+          <a href="#" target="_blank"> <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i> </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Table Lamp</h5>
+          <p class="card-text text-center">$230.00</p>
+        </div>
+      </div>
+    </div>
+    </div>
+   </div>
+  <div class="footercarousel" style="background-color:#F5F5F5; padding: 50px;">
+    <div class="text-center">
+      <h1>Our Popular Brands</h1>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"  style="padding: 80px;  margin-left:-20px;margin-right:-20px; margin-top: 20px; margin-bottom: 20px; ">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="footersm1">
+              <img src="./logo 1.png" class="d-block" alt="First Image" style="height:50px;">
+              <img src="./logo 2.png" class="d-block" alt="Second Image" style="height:50px;">
+              <img src="./logo 3.png" class="d-block" alt="Second Image" style="height:50px;">
+              <img src="./logo 4.png" class="d-block" alt="Second Image" style="height:50px;">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="footersm2">
+            <img src="./logo 1.png" class="d-block" alt="First Image" style="height:50px;">
+            <img src="./logo 2.png" class="d-block" alt="Second Image" style="height:50px;">
+            <img src="./logo 3.png" class="d-block" alt="Second Image" style="height:50px;">
+            <img src="./logo 4.png" class="d-block" alt="Second Image" style="height:50px;">
+          </div>
+        </div>
+ 
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="userdetail">
+    <h1>Get Updates</h1>
+    <p> Stay informed about our latest updates through email. Subscribe here </p>
+    <form>
+      <label for="name" id="name"></label>
+      <input type="text" placeholder="Name" required>
+      <label for="email" id="email"></label>
+      <input type="text" placeholder="E-mail" required style="margin-right:10px"> 
+      <input type="submit" value="Subscribe" style="background-color: #F2618B; color: white; padding-left: 5px; padding-right: 5px; border: none; border-radius: 5px; padding-top: 3px; padding-bottom: 3px; ">
+    </form>
+  </div>
+  <footer>
+    <div class="row">
+      <div class="col-3">
+        <h5>INFORMATION</h5>
+        <a href="">About Us</a> <br>
+        <a href="">In the news</a><br>
+        <a href="">feed back</a><br>
+        <a href="">About the company</a><br>
+      </div>
+      <div class="col-3">
+        <h5>HELP</h5>
+        <a href="">Tracking Order</a> <br>
+        <a href="">Shipping and deliveries</a><br>
+        <a href="">Return policy</a><br>
+        <a href="">Cancel Order</a><br>
+      </div>
+      <div class="col-3">
+        <h5>REACH US</h5>
+        +91 889464571 <br>
+        2420 W Division St St Cloud, Minnesota<br>
+        Monday - Saturday: open 8:00 - 21:00 <br>
+
+      </div>
+      <div class="col-3">
+        <h5>FOLLOW US</h5>
+        <img src="../HTML CSS/zpstock-image-976.png"> 
+        <img src="https://lighting.zohocommerce.com/stock_images/zpstock-image-978.png"> 
+        <img src="https://lighting.zohocommerce.com/stock_images/zpstock-image-977.png"> 
+        <h5> PAYMENT OPTION</h5>
+        <IMG src="../HTML CSS/zpstock-image-984.png">
+      </div>
+      <hr style="margin-top: 20px;">
+      <hr style="margin-top: 80px;">
+      <span style="text-align: center;">
+        Ozone © 2020. All Rights Reserved
+      </span>
+    </div>
+  </footer>
+</body>
+</html>

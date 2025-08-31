@@ -1,0 +1,43 @@
+.D{
+    background-color: red;
+    color: white;
+    padding:10px;
+    width:fit-content;
+    border-radius: 3px;
+    margin: 10px;
+}
+.D:hover{
+    transform: rotateZ(120deg);
+}
+.rb{
+    border-style: solid;
+    background-color: hotpink;
+    border-radius: 15px 8px 5px 20px;
+    width: fit-content;
+    padding: 15px;
+}
+.bi{
+    border-style: solid;
+    background-color: hotpink;
+    width: fit-content;
+    padding: 15px;
+    border-image: url("medium.webp") 30 round ;
+}
+.lineargradient{
+    background-image: linear-gradient(red,blue);
+}
+.radialgradient{
+    background-image: radial-gradient(red,yellow,green);
+}
+.rg{
+    background-image:radial-gradient(closest-side at 60% 55%,red,yellow,green);
+}
+.conicalgradient{
+    background-image:conic-gradient(red, green, yellow);
+}
+img{
+    margin-top: 40px;
+    height: 100px;
+    width:100px;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}

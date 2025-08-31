@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rowspan Columnspan</title>
+    <link rel="icon" type="image/x-icon" href="../HTML/medium.webp">
+    <style>
+    table, th, td 
+    {
+        border:1px solid black;
+    }
+    </style>
+</head>
+<body>
+    <h1>Rowspan Coloumnspan</h1>
+    <table>
+	<caption> Timetable </caption>
+        <th></th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <tr>
+            <td>6-7pm</td>
+            <td>lookatweb</td>
+            <td>free</td>
+            <td>implementation</td>
+            <td>free</td>
+            <td>free</td>
+        </tr>
+        <tr>
+            <td>6-7pm</td>
+            <td>lookatweb</td>
+            <td>free</td>
+            <td>implementation</td>
+            <td>free</td>
+            <td>free</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

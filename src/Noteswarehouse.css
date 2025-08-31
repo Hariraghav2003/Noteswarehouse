@@ -1,0 +1,337 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+nav{
+  padding-top: 10px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items:center;
+    background-color: white;
+    flex-wrap: wrap;
+
+}
+nav ul img{
+    height: 50px;
+    width: 300px;
+}
+.searchbar{
+    border-style:solid;
+    border-color: black;
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    
+}
+nav ul a{
+    background-color:black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
+}
+a{
+    text-decoration: none;
+}
+nav a:hover{
+  color: white;
+}
+.dropdown{
+    margin-left: 20px;
+    background-color:black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 3;
+}
+.dropdowncontent a{
+    margin: 10px;
+    text-decoration: none;
+    display:contents;
+    color: black;
+}
+.dropdown a:hover{
+  color: black;
+}
+
+.dropdown:hover .dropdowncontent{
+    cursor: pointer;
+    display: block;
+}
+.firstcarousel{
+    margin-top: 20px;
+    position: relative;
+    z-index: -1;
+}
+.firstcarousel img{
+    padding: 30px;
+    height: 700px;
+    
+}
+.about{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    margin: 40px;
+    font-family: "Koh Santepheap", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.technicalcourseabout{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-weight: bolder;
+}
+.handwrittennotesabout{
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    font-weight: bolder;
+}
+.handwrittennotes a{
+    display: contents;
+    color: black;
+   
+}
+.handwrittennotes img{
+    height: 300px;
+}
+.imagecenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.accordion-body a:hover{
+  color: black;
+}
+.accordion-body a{
+  color: black;
+}
+.bar a{
+  display: contents;
+}
+#two{
+  margin-left: 20px;
+}
+.fullstackcourses{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 700px;
+  column-gap: 40px;
+}
+.webdesigncourses{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 100px;
+  column-gap: 40px;
+
+}
+.webdesigncourses img{
+  width: 300px;
+  height: 200px;
+}
+.fullstackcourses img{
+  height: 300px;
+  width: 300px;
+}
+.card{
+    border: solid hotpink;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.alert{
+  position: fixed;
+  top:70px;
+  bottom: 580px;
+  left: 5px;
+  width: 1512px;
+}
+footer{
+  margin-top: 30px;
+  background-color: brown;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  flex-flow:row;
+  column-count: 4;
+
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer a:hover{
+  text-decoration: none;
+  color: white;
+}
+.d{
+  margin-top: 40px;
+}
+.subscribebutton{
+  background-color: #F2618B; 
+  color: white; 
+  padding-left: 5px; 
+  padding-right: 5px; 
+  border: none; 
+  border-radius: 5px; 
+  padding-top: 3px; 
+  padding-bottom: 3px; 
+  
+}
+.bar{
+  color: black;
+}
+.bar{
+  color: black;
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+  .alert{
+      position: fixed;
+      top:10px;
+      bottom: 650px;
+      left: 5px;
+      width: 480px;
+    }
+    .searchbar{
+        border-style:solid;
+        border-color: black;
+        border-radius: 10px;
+        width: 100px;
+        height: 30px;
+        
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .dropdown{
+        display: none;
+    }
+    nav ul img{
+      height: 50px;
+      width: 400px;
+      margin-bottom: 20px;
+    }
+    .bar a{
+      color: black;
+    }
+    .bar a:hover{
+        color: black;
+    }
+    .about{
+      position: absolute;
+      top: 60%;
+      left: 250px;
+      transform: translate(-50%, -50%);
+     text-align: justify;
+      margin: 0px;
+      font-family: "Koh Santepheap", serif;
+      font-weight: 700;
+      font-style: normal;
+
+      font-size: 10px;
+    }
+    .firstcarousel img{
+      height: 350px;
+     
+    }
+    .technicalcourseabout{
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      font-weight:bolder;
+    }
+    #one{
+      opacity: 0.5;
+    }
+    #two{
+      margin-left: 65px;
+    }
+    .fullstackcourses{
+      display: grid;
+      grid-template-columns: auto ;
+      width: 400px;
+      row-gap: 50px;
+      margin-left: 15px;
+    }
+    .imagecenter{
+      padding-top: 0px;
+      height:200px;
+      width:450px;
+    }
+    .fullstackcourses img{
+      height: 300px;
+      width: 400px;
+    }
+    .webdesigncourses{
+      display: grid;
+      grid-template-columns: auto ;
+      width: 400px;
+      row-gap: 50px;
+      margin-left: 15px;
+    }
+    .webdesigncourses img{
+      height: 300px;
+      width: 400px;
+    }
+    footer{
+      margin-top: 30px;
+      background-color: brown;
+      color: white;
+      padding: 20px;
+      display: grid;
+      row-gap:10px;
+
+    }
+    .d{
+      margin-top: -5px;
+    }
+    .subscribebutton{
+      background-color: #F2618B; 
+      color: white; 
+      padding-left: 5px; 
+      padding-right: 5px; 
+      border: none; 
+      border-radius: 5px; 
+      padding-top: 3px; 
+      padding-bottom: 3px; 
+      margin-top: 20px;
+      margin-bottom: 0px;
+  
+    }
+    .icon{
+      margin-left: 150px;
+
+    }
+
+}

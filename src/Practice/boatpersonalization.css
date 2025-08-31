@@ -1,0 +1,211 @@
+body{
+    background-color:#EDFEFE;
+}
+.navbar{
+    top: 10px; 
+    position:sticky;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    background-color: white;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdowncontent a{
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdowncontent{
+    cursor: pointer;
+    display: block;
+}
+.userdropdown{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.userdropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: #828282;   
+    width:160px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    padding: 12px 16px;
+    z-index: 1;
+}
+.userdropdowncontent a{
+    color: whitesmoke;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+.userdropdown:hover .userdropdowncontent{
+    cursor: pointer;
+    display: block;
+}
+.searchbar{
+    border-style:solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 3px;
+    margin-right: 10px;
+    height: 25px;
+}
+.mobileviewnav{
+    display: none;     
+    position: sticky;
+    top:0px;
+}
+.mobileviewnav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    background-color: white;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.boatpersonalizationproducts{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cart{
+    width:150px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 20px;
+
+}
+.cart:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.boatpersonalizationproducts {
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    column-gap: 0px;
+    background-color: #EDFEFE;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.contact{
+    position: fixed;
+    top:0px;
+    right: 0px;
+    top: 600px;
+    opacity: 0.5;
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    .navbar{
+        display:none;
+    }
+    .mobileviewnav{
+        display: block;
+    }
+    .mdropdown{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .mdropdowncontent{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    .mdropdowncontent ul{
+        color:black;
+        text-decoration: none;
+        display: block;
+        padding: 20px;
+    }
+    .mdropdown:hover .mdropdowncontent{
+        cursor: pointer;
+        display: block;
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .dropdowncontent{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    .dropdowncontent a{
+        color:black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown:hover .dropdowncontent{
+        cursor: pointer;
+        display: block;
+    }
+    .userdropdown{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .userdropdowncontent{
+        display: none;
+        position: absolute;
+        background-color: #828282;
+        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+        z-index: 1;
+        width: 90px;
+
+    }
+    .userdropdowncontent a{
+        color:whitesmoke;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .userdropdown:hover.userdropdowncontent{
+        cursor: pointer;
+        display: block;
+    }
+    .boatpersonalizationproducts {
+        display:grid;
+        grid-template-columns:auto ;
+        column-gap: 0px;
+        background-color: #EDFEFE;
+        row-gap: 50px;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-left:75px;
+    }
+
+
+}

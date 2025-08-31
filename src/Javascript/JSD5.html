@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Day 5</title>
+    <link rel="icon" type="image/x-icon" href="../Favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <script src="../footer.js"></script>
+    <link rel="stylesheet" href="../Noteswarehouse.css">
+    <script src="../HTML CSS/sb.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../searchbar.css">
+    <link rel="stylesheet" href="../smdevice.css">
+    <link rel="stylesheet" href="../signnavbar.css">
+    <style>
+        button{
+            border: 0px;
+            background-color: #059862;
+            color:white;
+            padding:10px;
+            margin-left:10px;;
+            border-radius: 15px;
+            
+        }
+        .try{
+            display: flex;
+            flex-flow: row wrap;
+        }
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li class="bar">
+
+            <span  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars fa-lg" style="background-color: white; color: black; border-style: none; margin-right: 15px;"></i></span>
+    
+            
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel" style="color: hotpink;">Notes Warehouse</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeven" >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven" >
+                      <span style="color: black;"> Computer Science and Engineering </span>  
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../sem1cse.html">Semester 1</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../sem2cse.html">Semester 2</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../sem3cse.html">Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../sem4cse.html">Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../sem5cse.html">Semester 5</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../sem6cse.html">Semester 6</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../sem7cse.html">Semester 7</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../sem8cse.html">Semester 8</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../cselab.html">Laboratories</a> <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEight">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                       <span style="color: black;"> Information Technology </span> 
+                      </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 1</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 2</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 5</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 6</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 7</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 8</a> <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingNine">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                        <span style="color: black;">   Electronics and Communication Engineering </span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 1</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 2</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 5</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 6</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 7</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 8</a> <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTen">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                        <span style="color: black;">   Electrical and Electronics Engineering </span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 1</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 2</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 5</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 6</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 7</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 8</a> <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEleven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                        <span style="color: black;">   Civil Engineering </span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 1</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 2</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 5</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 6</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 7</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 8</a> <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwelve">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                        <span style="color: black;">  Mechanical Engineering </span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 1</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 2</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 5</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 6</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 7</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Semester 8</a> <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeventeen">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseSeventeen">
+                        <span style="color: black;">   Specalization Courses </span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="flush-headingSeventeen" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Cybersecurity</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Internet of Things</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a>Cloud Computing</a> <br>
+                      </div>
+                    </div>
+                    <hr style="margin-top: 0px;">
+                  </div>                  
+                </div>  
+                <div style="margin-left: 20px;"> 
+                  <a href="../webdevelopment.html" style="color:black; "> Web Development Fundamentals </a> <br> <hr style="width: 105%; margin-left: -20px;" >  
+                  <a href="" style="color:black; "> Java Fullstack </a> <br> <hr style="width: 105%; margin-left: -20px;" >  
+                  <a href="" style="color:black; ">MERN Stack </a> <br> <hr style="width: 105%; margin-left: -20px; opacity:calc(0.15); color: inherit;" >  
+                  <a href="" style="color: black;">MEAN Stack</a> <br> <hr style="width: 105%; margin-left: -20px;" > 
+                  <a href="" style="color:black; ">Python Fullstack </a> <hr style="width: 105%; margin-left: -20px; margin-bottom: 0px;"  > 
+                </div>
+              </div>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+          </li>
+
+        <li><a href="../index.html" style="display: contents;"> <img src="../logo.png" > </a></li>
+        <li class="dropdown" >
+            Engineering Courses <i class="fa-solid fa-angle-down fa-xs"></i> 
+            <div class="dropdowncontent">
+                <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../cse.html"> Computer Science and Engineering </a> <br>
+                <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../HTML CSS/D4.html"> Information and Technology </a> <br>
+                <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../HTML CSS/D5.html"> Electronics and Communication Engineering </a> <br>
+                <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../HTML CSS/D5.html"> Electrical and Electronics Engineering </a> <br>
+                <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../HTML CSS/D5.html"> Civil Engineering </a> <br>
+                <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../HTML CSS/D5.html"> Mechanical Engineering </a>  <br> 
+            </div>
+        </li>
+        <li class="dropdown" style="margin-right: 200px;">
+            Technical Courses <i class="fa-solid fa-angle-down fa-xs"></i> 
+            <div class="dropdowncontent" style="width: 220px;">
+              <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="../index.html#fc">Fullstack Development </a> <br>
+              <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a href="../index.html#fc">UI/UX Design</a> <br>
+              <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a href="../index.html#wd">Web Design Course</a> <br> 
+            </div>
+        </li>
+        <div class="usersignin" id="usersignin" >
+          <li>
+            <i class="fa-solid fa-xl fa-magnifying-glass" id="two" ></i>   
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Engineering Courses" class="searchbar"  >
+              <ul id="myUL">
+                
+              </ul>
+          </li>
+            <li><a href="../signin.html" style="margin-left:15px; text-decoration: none;" target="_blank" > Sign-in</a></li>
+            <li> <a href="../signup.html"style="margin-left:15px; text-decoration:none;" target="_blank">Sign-up </a></li>
+          </div>
+    </ul>
+</nav>
+<center><h1 style="font-weight: bolder;"> JavaScript Day 5 </h1></center>
+    <h1>JavaScript Strings and methods!!</h1>
+    <p>
+        String are the collection of characters or combination of characters and there are many methods to access these Strings they are,
+        <ol>
+            <li>String.length:used to find the length of the given string</li>
+            <li>Sting.charAt():Used to extract the character from the string based on the index value</li>
+            <li>String.charCodeAt():Same as charAt() but it returns that character's unicode value</li>
+            <li>String.at():Same as charAt() but it allows negative index values i.e from last</li>
+            <li>String[]:Same as charAt() but if the character at the given postion is not found it will return undefined whereas charAt returns empty string</li>
+            <li>
+                String.slice(Start,End):used to extract the part of the string based on index value given in the start and end
+                but the character in the end value will not be included
+            </li>
+            <li>
+                String.substring(Start,End):same as slice but negative index values are considerd as 0
+            </li>
+            <li>
+                String.substr(Start,length):same as slice but the endvalue will be length if we give 1 as start value it will return the characters upto
+                the length value if length value is not given it will take upto end of the string (This functionality is applicable to slice())
+            </li>
+            <li>String.touppercase():To convert the string to uppercase</li>
+            <li>String.tolowercase():To convert the string to lowercase</li>
+            <li>String.concat():To merge two strings</li>
+            <li>String.trim():To remove the whitespace</li>
+            <li>String.trimStart():To remove the whitespace before the text</li>
+            <li>String.trimEnd():To remove the whitespace after the text</li>
+            <li>String.padStart():To concate the values based on the index before text</li>
+            <li>String.padEnd():To concate the values based on the index after text</li>
+            <li>String.repeat():To repeat a string based on the value </li>
+            <li>String.replace():To replace  single characters in the given string based on the given text inside the replace it's case senstive so we use /i </li>
+            <li>String.replaceAll(): Same as replace but it will replace All the occurance </li>
+            <li>String.split():To convert string to character array based on " Comma (,) " spaces and  pipes</li>
+        </ol>
+    </p>
+    <div class="try">
+        <button onclick="uppercase()"> Click to convert the text to uppercase</button>
+       
+        <button onclick="lowercase()"> Click to convert the text to lowercase</button>
+        
+        <button onclick="concat()"> Click to concat any string with Hari</button> 
+    </div>
+    <p id="uc"></p>
+    <p id="lc"></p>
+    <p id="cc"></p>
+    <script>
+        function uppercase(){
+            let normal=prompt("Enter a text:");
+            let uppercase=normal.toUpperCase();
+            document.getElementById("uc").innerHTML="The user given text is "+ normal+ " which is converted into "+uppercase+" as uppercase";
+        }
+        function lowercase(){
+            let normal=prompt("Enter a text:");
+            let lowercase=normal.toLowerCase();
+            document.getElementById("lc").innerHTML="The user given text is "+ normal+ " which is converted into "+lowercase+" as lowercase";
+        }
+        function concat(){
+            let string="Hari";
+            let cstring=prompt("Enter a text to concat with"+string);
+            let concatedstring=string.concat('',cstring);
+            document.getElementById("cc").innerHTML="The user entered text "+cstring+" is concated with "+string+" :"+concatedstring;
+        }
+    </script>
+    <script>
+        let text = "BananA,Apple";
+        let length=text.length;
+        console.log(length);
+        let a=text.charAt(6);
+        console.log(a);
+        let u=text.charCodeAt(6);
+        console.log(u);
+        console.log(text.at(-3));
+        console.log(text[13]);//Returns undefined
+        console.log(text.charAt(13))//Returns Empty String
+        let part = text.slice(2,6);
+        console.log(part);
+        let substring=text.substring(6);
+        console.log(substring);
+        let substr=text.substr(4,4);
+        console.log(substr); 
+        let split=text.split("");
+        console.log(split);
+        let replace=text.replace(/A/i, "red");
+        console.log(replace);
+    </script>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="./JSD4.html" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="./JSD6.html">Next</a>
+              </li>
+            </ul>
+          </nav>
+        <div class="userrequest">
+            <center> 
+              <h3> User Request Box </h3>
+            <form onsubmit="request()">
+              <label for="Request"></label>
+              <input type="text" placeholder="Leave Your request here" id="userrequest" required style="width: 450px; border-radius:20px; border:hotpink solid 3px;">  
+              <input type="submit" value="Submit" style="background-color: #F2618B; color: white; padding-left: 5px; padding-right: 5px; border: none; border-radius: 5px; padding-top: 3px; padding-bottom: 3px; margin-top: 10px; ">
+            </form>
+            </center>
+        
+          </div>
+           <footer>
+            <div class="updates">
+              <h1>Get Updates</h1>
+              <p> Stay in the touch with our latest notes and courses—subscribe for updates!</p>
+              <form onsubmit="userdetails()">
+                <label for="name"></label>
+                <input type="text" placeholder="Name" id="name" required>
+                <label for="email"></label>
+                <input type="text" placeholder="E-mail" id="email" required style="margin-right:10px"> 
+                <input type="submit" value="Subscribe" class="subscribebutton">
+              </form>
+            </div> 
+            <div class="aboutus">
+              <h2> About us </h2> 
+                <span><i class="fa-solid fa-location-dot"></i> India</span> <br>
+                <span> for Collaboration contact us <a href="https://mailto:hariraghava21s@gmail.com" target="_blank"> <i class="fa-solid fa-envelope"></i> </a>  </span> <br>
+                <span> Support & Follow us <a href="https://www.instagram.com/hariraghav_hr/profilecard/?igsh=MWpndzR0bTB1b243aw==" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>  <a href="https://x.com/Hariraghav2003?t=kr08Z5q3mydajSF7op67tg&s=08" target="_blank"> <i class="fa-brands fa-x-twitter"></i> </a> <a href="https://discordapp.com/users/972496342939222036/" target="_blank"> <i class="fa-brands fa-discord"></i> </a> </span> <br>
+                <span>For any queries contact us <i class="bi bi-headset fa-lg" onclick="support()" style="cursor: pointer;"></i> </span>
+            </div> 
+            
+            <div class="services">
+                <h2> Our Services: </h2> 
+                <a href="../index.html#fc">  <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Fullstack Courses <br> </a>
+                <a href="../index.html#wd"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp;  Webdesign Courses <br> </a>
+                <a href="../index.html#ui"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; UI/UX Design <br> </a>
+                <a onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp;  Data Science <br> </a>
+            </div>
+            <div class="d" >
+              <a href="../cse.html"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Computer Science and Engineering <br> </a>
+              <a  onclick="development()" style="cursor: progress;">  <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;" ></i> &nbsp; Information Technology <br> </a>
+              <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Electronics and Communications Enginnering <br> </a>
+              <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Electrical and Electronics Enginnering <br> </a>
+              <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Civil Engineering <br> </a>
+              <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Mechanical Engineering <br> </a> 
+            </div>
+            <div class="icon">
+              <img src="../Favicon.jpg" height="190px" width="150px">
+            </div>
+            </footer>
+            <script src="signinchecknavj.js"></script>
+</body>
+</html>

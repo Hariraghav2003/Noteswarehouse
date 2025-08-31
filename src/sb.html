@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: block; 
+  position: absolute;
+  width: 100%;
+}
+
+#myInput:active + #myUL
+ {
+  display: block;
+} 
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>My Phonebook</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<ul id="myUL">
+  <li><a href="#">Computer science and Engineering</a></li>
+  <li><a href="#">Webdevelopment</a></li>
+</ul>
+
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toLowerCase().replaceAll(" ","");
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    // If "CSE" is typed, display the semesters list
+    if (filter === "cse") {
+        ul.innerHTML = `
+            <li><a href="./sem1cse.html">CSE Sem 1</a></li>
+            <li><a href="./sem2cse.html">CSE Sem 2</a></li>
+            <li><a href="./sem3cse.html">CSE Sem 3</a></li>
+            <li><a href="./sem4cse.html">CSE Sem 4</a></li>
+            <li><a href="./sem5cse.html">CSE Sem 5</a></li>
+            <li><a href="./sem6cse.html">CSE Sem 6</a></li>
+            <li><a href="./sem7cse.html">CSE Sem 7</a></li>
+            <li><a href="./sem8cse.html">CSE Sem 8</a></li>
+        `;
+    }
+    else if(filter==="computerscience"){
+        ul.innerHTML = `
+            <li><a href="./sem1cse.html">CSE Sem 1</a></li>
+            <li><a href="./sem2cse.html">CSE Sem 2</a></li>
+            <li><a href="./sem3cse.html">CSE Sem 3</a></li>
+            <li><a href="./sem4cse.html">CSE Sem 4</a></li>
+            <li><a href="./sem5cse.html">CSE Sem 5</a></li>
+            <li><a href="./sem6cse.html">CSE Sem 6</a></li>
+            <li><a href="./sem7cse.html">CSE Sem 7</a></li>
+            <li><a href="./sem8cse.html">CSE Sem 8</a></li>
+        `;
+    }
+    else if(filter==="computerscienceandengineering"){
+        ul.innerHTML = `
+            <li><a href="./sem1cse.html">CSE Sem 1</a></li>
+            <li><a href="./sem2cse.html">CSE Sem 2</a></li>
+            <li><a href="./sem3cse.html">CSE Sem 3</a></li>
+            <li><a href="./sem4cse.html">CSE Sem 4</a></li>
+            <li><a href="./sem5cse.html">CSE Sem 5</a></li>
+            <li><a href="./sem6cse.html">CSE Sem 6</a></li>
+            <li><a href="./sem7cse.html">CSE Sem 7</a></li>
+            <li><a href="./sem8cse.html">CSE Sem 8</a></li>
+        `;
+    }
+    else if(filter==="computerscienceengineering"){
+        ul.innerHTML = `
+            <li><a href="./sem1cse.html">CSE Sem 1</a></li>
+            <li><a href="./sem2cse.html">CSE Sem 2</a></li>
+            <li><a href="./sem3cse.html">CSE Sem 3</a></li>
+            <li><a href="./sem4cse.html">CSE Sem 4</a></li>
+            <li><a href="./sem5cse.html">CSE Sem 5</a></li>
+            <li><a href="./sem6cse.html">CSE Sem 6</a></li>
+            <li><a href="./sem7cse.html">CSE Sem 7</a></li>
+            <li><a href="./sem8cse.html">CSE Sem 8</a></li>
+        `;
+    }
+    else if(filter==="sem"){
+        ul.innerHTML = `
+            <li><a href="./sem1cse.html">CSE Sem 1</a></li>
+            <li><a href="./sem2cse.html">CSE Sem 2</a></li>
+            <li><a href="./sem3cse.html">CSE Sem 3</a></li>
+            <li><a href="./sem4cse.html">CSE Sem 4</a></li>
+            <li><a href="./sem5cse.html">CSE Sem 5</a></li>
+            <li><a href="./sem6cse.html">CSE Sem 6</a></li>
+            <li><a href="./sem7cse.html">CSE Sem 7</a></li>
+            <li><a href="./sem8cse.html">CSE Sem 8</a></li>
+        `;
+    }
+    else if(filter==="c"){
+        ul.innerHTML = `
+            <li><a href="./sem1cse.html">CSE Sem 1</a></li>
+            <li><a href="./sem2cse.html">CSE Sem 2</a></li>
+            <li><a href="./sem3cse.html">CSE Sem 3</a></li>
+            <li><a href="./sem4cse.html">CSE Sem 4</a></li>
+            <li><a href="./sem5cse.html">CSE Sem 5</a></li>
+            <li><a href="./sem6cse.html">CSE Sem 6</a></li>
+            <li><a href="./sem7cse.html">CSE Sem 7</a></li>
+            <li><a href="./sem8cse.html">CSE Sem 8</a></li>
+        `;
+    }
+    else if(filter==="computer"){
+        ul.innerHTML = `
+            <li><a href="./sem1cse.html">CSE Sem 1</a></li>
+            <li><a href="./sem2cse.html">CSE Sem 2</a></li>
+            <li><a href="./sem3cse.html">CSE Sem 3</a></li>
+            <li><a href="./sem4cse.html">CSE Sem 4</a></li>
+            <li><a href="./sem5cse.html">CSE Sem 5</a></li>
+            <li><a href="./sem6cse.html">CSE Sem 6</a></li>
+            <li><a href="./sem7cse.html">CSE Sem 7</a></li>
+            <li><a href="./sem8cse.html">CSE Sem 8</a></li>
+        `;
+    }
+    else {
+        // Reset to the original list and filter it
+        // ul.innerHTML = `
+        //     <li><a href="#">Adele</a></li>
+        //     <li><a href="#">Agnes</a></li>
+        //     <li><a href="#">Billy</a></li>
+        //     <li><a href="#">Bob</a></li>
+        //     <li><a href="#">Calvin</a></li>
+        //     <li><a href="#">Christina</a></li>
+        //     <li><a href="#">Cindy</a></li>
+        // `;
+        
+        // Apply filtering on original list
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <script src="../Practice/formvalidation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="../Practice/94f906ed35231eb2f948f73f723495ee.jpg">
+    <link rel="stylesheet" href="../smdevice.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            font-size: 20px;
+            background-color:#EDFEFE;
+            flex-wrap: wrap;
+           
+        }
+        input{
+            margin-bottom: 10px;
+        }
+
+        .one{
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size:large;
+        }
+
+    </style>
+</head>
+<body>
+    <form class="signin">
+        <i class="fa-solid fa-user" style="color:#FE0606;"></i> <label for="username">Username:</label> 
+        <input type="text" id="username" name="username" placeholder="John@2003" required><br> <br>
+        <i class="fa-solid fa-lock" style="color: #fe0606;"></i> <label for="password">Password:</label> 
+        <input type="password" id="password" name="password" required> <br> <br>
+        <input type="submit" value="Signin"  class="one">
+    </form>
+</body>
+</html>

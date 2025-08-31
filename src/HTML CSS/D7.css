@@ -1,0 +1,31 @@
+body{
+    background-color: whitesmoke;
+}
+
+ul{
+    list-style-type: disc; 
+    background-color: red;
+    opacity: 0.8;
+    color: azure;
+    width: 200px;
+}
+
+p.dotted{
+    border-style: dotted;
+}
+p.mixed{
+    border-style: dotted solid dashed groove; 
+    /* dotted-top,solid-right,dashed-bottom,groove-left*/
+}
+p.ddg{
+    border-style:dotted dashed groove;
+}
+
+p.dg{
+    border-style: dotted groove;
+}
+
+a{
+    display: contents;
+    color: azure;
+}

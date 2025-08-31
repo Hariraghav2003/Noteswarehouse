@@ -1,0 +1,89 @@
+p.margin{
+    border-style: solid;
+    border-color: red;
+    border-width: 10px;
+    margin: 55px ;
+    padding:45px;
+    text-align: center;
+}
+
+p.marginr{
+    border-style: solid;
+    border-color: red;
+    border-width: 10px;
+    margin-right: 40px;
+    padding-right: 45px;
+
+
+}
+
+p.marginl{
+    border-style: solid;
+    border-color: red;
+    border-width: 10px;
+    margin-left: 40px;
+    padding-left: 45px;
+}
+
+p.margint{
+    border-style: solid;
+    border-color: red;
+    border-width: 10px;
+    margin-top: 30px;
+    padding-top: 45px;
+}
+
+p.marginb{
+    border-style: solid;
+    border-color: red;
+    border-width: 10px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+a{
+    display: contents;
+    color: black;
+}
+
+div{
+    background-color: crimson;
+    color: azure;
+    height:fit-content;
+    max-height: 200px;
+    width:300px;
+    max-width: 400px;
+}
+
+img{
+    height: 300px;
+    width: 500px;
+}
+
+p.o{
+    border:solid red 5px;
+    outline: dotted yellow 5px;
+    outline-offset: 6px ;
+}
+
+dd.l{
+    text-decoration-line: overline underline line-through ;
+}
+
+dd.c{
+    text-decoration-line:underline ;
+    text-decoration-color: brown;
+}
+
+dd.s{
+    text-decoration-line:underline ;
+    text-decoration-style:wavy ;
+    text-decoration-color: red;
+}
+
+dd.t{
+    text-decoration-line:underline ;
+    text-decoration-color: brown;
+    text-decoration-thickness:5px ;
+    
+}

@@ -1,0 +1,72 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bg img{
+   height: 700px;
+   width: 1500px;
+   opacity: 0.7;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: fit-content;
+    padding: 20px;
+
+    height:fit-content;
+    border: hotpink solid;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.button{
+    border-style: none;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+#cross{
+    margin-left: 300px;
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+    .bg img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 800px;
+    }
+    form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: fit-content;
+        padding: 20px;
+        height:fit-content;
+        border: hotpink solid;
+        border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    #cross{
+        margin-left: 190px;
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Week1</title>
+    <link rel="icon" type="image/x-icon" href="../HTML/medium.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        table, th, td 
+        {
+            border:1px solid black;
+        }
+        .one
+        {
+            background-color:red;
+        }
+        #three
+        {
+            background-color: blue;
+        }
+        /* .two
+        {
+            background-color: darkgreen;
+        } */
+    </style>
+</head>
+<body>
+    <h1>This is a week1 HTML webpage</h1>
+    <br>
+    <h2> This is a week1 Html web page which sumarizes Day 1 to Day 4 learnings </h2> 
+    <p> 
+        In Day1 we learnt <small>Small Tag </small> <em>Emphazie tag </em> <i> italic tag </i> <b> Bold Tag </b> <del> Delete Tag </del> <ins>Insert Tag</ins>
+        Subscript Tag <sub>sub</sub> SuperScript Tag <sup>sup</sup> <mark>Mark Tag</mark> <a href="../HTML/D1.html">A anchor tag</a> and <img src="../HTML/medium.webp" height="40" width="50"> Iamge Tag </img>
+    </p>
+    <hr>
+    <p>
+        In Day2 we learnt <strong>Strong Tag</strong> <bdo dir="rtl">Bi directional Order Tag</bdo> <q> Quote Tag for double quotes </q> Abbrevation Tag <abbr title="World Health Organisation"> WHO </abbr>
+        An  address tag to represent Address Like this:<address>12/06/21 SVP Nagar First Street</address> and <a href="../HTML/D2.html"> <button>Button Tag</button> <br> </a> Block quote Tag 
+        <blockquote cite="../HTML/D2.html"> Contents from another site</blockquote> <cite> Cite Tag  same as italic tag</cite>
+    </p>
+    <hr>
+    <p> In day 3 we learnt Lists,Tabels,iframe,div,class,id,block and inline (span Tag) </p>
+    <h3> Tabels </h3>
+    <table>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2"> Topic </th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td>Monday</td>  
+            <td>8:00AM</td>
+            <td>5:00PM</td> 
+            <td>Day1</td>   
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00AM</td>
+            <td>11:00AM</td>
+            <td rowspan="3">Day2</td>
+        </tr>
+        <tr>
+            <td>8:00AM</td>
+            <td>11:00AM</td>
+        </tr>
+        <tr>
+            <td>8:00AM</td>
+            <td>11:00AM</td>
+        </tr> 
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00AM</td>
+            <td>11:00AM</td>
+            <td>Day3</td>   
+        </tr>      
+    </table>
+    <h3> List </h3>
+    <h4> Unordered List</h4>
+    <ul style="list-style-type: square;">
+        <li>Inline</li>
+        <li>Internal</li>
+        <li>External</li>
+    </ul>
+    <h4> Ordered List</h4>
+    <ol>
+        <li>Inline</li>
+        <li>Internal</li>
+        <li>External</li>
+    </ol>
+    <h4>Description List</h4>
+    <dl>
+        <dt>Inline CSS</dt>
+        <dd> Styling Contents inside a Tag </dd>
+        <dt>Internal CSS</dt>
+        <dd>Styling Contents in Header Part of HTML Tag</dd>
+        <dt>External CSS</dt>
+        <dd>Styling Contents in CSS </dd>
+    </dl>
+    <p> Iframe Tag</p>
+    <iframe src="../HTML/D3.html"></iframe>
+    <div class="one">
+        <p>Div Tag</p> 
+        <p>Example</p>
+    </div>
+    <div class="two">
+        <p id="three"> Without Div Tag</p>
+        <p id="three"> Without Div Tag</p>
+    </div>
+    <p>Hi This text is a sample form of <span style="color:red;"> Span </span> tag</p>
+    <hr>
+    <p> In Day4 we learnt about audio tag, video tag and icons </p>
+    <p> Audio with loop </p>
+    <audio controls loop>
+        <source src="C:\Users\HARI RAGHAV\Downloads\Achacho.mp3" type="audio/mpeg"> </source>
+    </audio>
+    <p> Audio without loop </p>
+     <audio controls>
+        <source src="C:\Users\HARI RAGHAV\Downloads\Achacho.mp3" type="audio/mpeg"> </source>
+    </audio>
+    <p> Video Tag Without poster and loop </p>
+    <video height="200" width="400"controls>
+        <source src="C:\Users\HARI RAGHAV\Videos\Ex No 7.mp4" type="video/mp4" > </source>
+    </video>
+    <p> Video With loop and poster </p>
+    <video height="200" width="400"controls loop poster="../HTML/medium.webp" style="max-width: 100%; height: auto;">
+        <source src="C:\Users\HARI RAGHAV\Videos\Ex No 7.mp4" type="video/mp4" > </source>
+    </video>
+    <p>Sample Icon <i class="fa-solid fa-hryvnia-sign" style="color: #ff3d3d;"></i> </p>
+    <hr>
+</body>
+</html>

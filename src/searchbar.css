@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block; 
+    position: absolute;
+    width: 300px;
+    margin-left: 50px;
+    z-index: 2;
+  }
+  
+  #myInput:active + #myUL
+   {
+    display: block;
+  } 
+  
+  #myUL li a {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-left: 20px;
+    /* margin-left: -90px; */
+  }
+
+  @media screen and (min-width:481px) and (max-width:768px) {
+    #myUL{
+        width: 150px;
+    }
+  }
+  

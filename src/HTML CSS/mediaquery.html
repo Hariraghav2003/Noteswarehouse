@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaquery example</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        @media screen and (min-width:0px)and (max-width:480px) {
+            body{
+                background-color: blue;
+                color:yellow;
+            }
+        }
+
+        @media screen and (min-width:481px)and (max-width:768px) {
+            body{
+                background-color: red;
+                color:white;
+            }
+        }
+
+        @media screen and (min-width:769px)and (max-width:1279px) {
+            body{
+                background-color:green;
+                color:darkorange;
+            }
+        }
+
+        @media screen and (min-width:1280px) {
+            body{
+                background-color:hotpink;
+                color:black;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>0px-480px- background-color is blue</li>
+        <li>481px-768px-backgrund-color is red</li>
+        <li>769px-1279px-background-color is green</li>
+        <li>1280px-background-color is hot pink</li>
+    </ul>
+    <p>like this we can create a responsive web page which supports all screen sizes</p>
+    
+</body>
+</html>

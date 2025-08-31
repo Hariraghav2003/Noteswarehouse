@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../Practice/formvalidation.js"></script>
+    <title>Sign-up</title>
+    <link rel="icon" type="image/x-icon" href="../Practice/94f906ed35231eb2f948f73f723495ee.jpg">
+    <link rel="stylesheet" href="../Practice/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../smdevice.css">
+    <style>
+        body{
+          
+           background-color: #EDFEFE;;
+            font-size:larger ;
+        }
+        form{
+            color:black
+        }
+    </style>
+</head>
+<body class="one">
+    <h1 class="two">Kindly,Enter your details!!</h1>
+    <form onsubmit="hello()">
+        <fieldset>
+            <legend>Personal information</legend>
+            <i class="fa-solid fa-signature" style="color: #fe0606;"></i> <label for="Firstname">Firstname</label> 
+            <input type="text" id="Firstname" name="Firstname" placeholder="John" required> <br> <br>
+
+            <i class="fa-solid fa-signature" style="color: #fe0606;"></i> <label for="Lastname">Lastname</label>
+            <input type="text" id="Lastname" name="Lastname" placeholder="Mathew" required> <br> <br>
+
+            <i class="fa-solid fa-phone" style="color: #fe0606;"></i> <label for="phonenumber" >phonenumber</label>
+            <select name="countrycode" id="countrycode"> 
+                <option value="+91" selected> +91</option> 
+                <option value="+1">+1</option>
+                <option value="+7">+7</option>
+                <option value="+86">+86</option>
+            </select>
+            <input type="tel" id="phonenumber" name="phonenumber" required placeholder="23147965" pattern="[0-9]+" maxlength="10" > <br> <br>
+
+            <i class="fa-solid fa-calendar-days" style="color: #fe0606;"></i> <label for="dob">Date of Birth</label> <br>
+            <input type="date" id="dob" name="dob" required> <br> <br>
+
+            <i class="fa-solid fa-address-card" style="color: #fe0606;"></i> <label for="address">Address</label> <br>
+            <textarea  id="address" name="address" cols="20" rows="5"  placeholder="enter your address" required ></textarea> <br> <br>
+            <!-- <input type="submit" value="Submit the details" >
+            <input type="reset" value="Reset"> -->
+        </fieldset>
+
+        <br>
+        
+        <fieldset>
+            <legend>Login Details</legend>
+            <i class="fa-solid fa-user" style="color: #fe0606;"></i> <label for="Username">Username</label>
+            <input type="text" id="Username" name="Username" placeholder="John@kml" required> <br> <br>
+            <i class="fa-solid fa-lock" style="color: #fe0606;"></i> <label for="Password"> Enter your Password</label> 
+            <input type="password" id="Password" name="Password" required> <br> <br>
+            <i class="fa-solid fa-lock" style="color: #fe0606;"></i> <label for="Rpassword">Re enter Your password</label>
+            <input type="password" id="rpassword" name="rpassword" required> <br> <br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit the details" > 
+        <input type="reset" value="Reset">
+    </form>
+    <script>
+
+    </script>
+</body>
+</html>

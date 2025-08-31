@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rowspan Columnspan</title>
+    <link rel="icon" type="image/x-icon" href="../HTML/medium.webp">
+    <style>
+    table, th, td 
+    {
+        border:1px solid black;
+    }
+    </style>
+</head>
+<body>
+    <h1>Rowspan Coloumnspan</h1>
+    <table>
+        <caption>Work Schedule</caption>
+        <!-- <thead> -->
+            <tr>
+                <th colspan="5"> Workdays</th> <!--Vertical Merging -->
+                <th colspan="2">Leisure Days</th>  <!--Vertical Merging -->
+            </tr>
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thurs</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+        <!-- </thead>
+        <tbody> -->
+            <tr>
+                <td>Sports</td>
+                <td>German</td>
+                <td>English</td>
+                <td></td>
+                <td>German</td>
+                <td rowspan="2">Dancing</td>
+                <td>Sleeping</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>Sports</td>
+                <td></td>
+                <td>Physics</td>
+                <td>Cs</td>
+                <td>Chillout</td>
+            </tr>
+        <!-- </tbody> -->
+    </table>
+    <br>
+    <table>
+        <tr> <th colspan="6">Time Table</th></tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Sci</td>
+            <td>Math</td>
+            <td>Sci</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>MAth</td>
+            <td>Sci</td>
+            <td>Math</td>
+            <td>Sci</td>
+            <td>Arts</td>
+        </tr>
+        <tr style="text-align: center;">
+           <td colspan="5">Lunch</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Sci</td>
+            <td>Math</td>
+            <td rowspan="2" colspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Sci</td>
+            <td>MAth</td>
+        </tr>
+    </table>
+</body>
+</html>

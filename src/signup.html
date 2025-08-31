@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="Favicon.jpg">
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="./smdevice.css">
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <section class="signup">
+        <img src="./10161832.jpg" height="650px" width="1000px"  style="padding: 20px;" class="img">
+        <div class="form">
+            <h3>Sign-up <i class="fa-solid fa-xmark fa-lg" onclick="redirect()" style="margin-left: 300px; cursor: pointer;"></i></h3>
+            <form id="userdetail">
+                <fieldset>
+                    <legend style="margin-bottom: 10px;">Enter your details </legend> 
+                    <i class="fa-solid fa-signature" style="color: hotpink;" ></i> <label for="Firstname">Firstname</label> 
+                    <input type="text" id="Firstname" name="Firstname" placeholder="John" required style="width: 240px;"> <br> <br>
+        
+                    <i class="fa-solid fa-signature" style="color: hotpink"></i> <label for="Lastname">Lastname</label>
+                    <input type="text" id="Lastname" name="Lastname" placeholder="Mathew" required style="width: 240px;"> <br> <br>
+        
+                    <i class="fa-solid fa-phone" style="color: hotpink"></i> <label for="phonenumber" >phonenumber</label>
+                    <select name="countrycode" id="countrycode"> 
+                        <option value="+91" selected> +91</option> 
+                        <option value="+1">+1</option>
+                        <option value="+7">+7</option>
+                        <option value="+86">+86</option>
+                    </select>
+                    <input type="tel" id="phonenumber" name="phonenumber" required placeholder="23147965" pattern="[0-9]+" maxlength="10" > <br> <br>
+        
+                    <i class="fa-solid fa-calendar-days" style="color: hotpink"></i> <label for="dob">Date of Birth</label> 
+                    <input type="date" id="dob" name="dob" required> <span class="error" id="error"> &nbsp; </span> <br> <br>
+                    
+                    <i class="fa-solid fa-address-card" style="color: hotpink"></i> <label for="address">Address</label> <br>
+                    <textarea style="resize:none;"  id="address" name="address" cols="30" rows="5"  placeholder="enter your address" required ></textarea> <br> <br>
+                    
+                    <i class="fa-solid fa-user" style="color: hotpink"></i> <label for="Username">Username</label>
+                    <input type="text" id="Username" name="Username" placeholder="John@kml" required style="width: 240px;"> <br> <br>
+                    <i class="fa-solid fa-lock" style="color: hotpink"></i> <label for="Password"> Enter your Password</label> 
+                    <input type="password" id="Password" name="Password" required style="width: 170px;" > <br> <br>
+                    <i class="fa-solid fa-lock" style="color: hotpink"></i> <label for="rpassword" >Re enter Your password</label>
+                    <input type="password" id="rpassword" name="rpassword" required style="width: 150px;"> <br> 
+                    <span class="error" id="passworderr"> &nbsp;  </span>
+                </fieldset>
+                <br>
+                <input type="submit" value="Sign-up" class="button"> 
+                <input type="reset" value="Reset" class="button"> <br> <br>
+                <span style="margin: 5px;" >Already have an account? &nbsp; <a href="./signin.html"> Sign-in &nbsp; </a></span>  
+            </form> <br>
+             
+        </div>
+    </section>
+    <script src="./signup.js"></script>
+</body>
+</html>

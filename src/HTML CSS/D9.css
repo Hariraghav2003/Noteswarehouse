@@ -1,0 +1,70 @@
+a:link{
+    color: green;
+}
+
+a:visited{
+    color:red
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+a:active{
+    color: chartreuse;
+}
+
+a.one{
+    background-color: #059862;
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+}
+
+p.one{
+    display:inline-block;
+}
+ul.four{
+    list-style-image: url('C:/Users/HARI RAGHAV/Downloads/N3BgXEI.jpg');
+}
+ul.five{
+    color:azure;
+    background: rgba(255, 0, 0, 0.9)  ;
+    border-radius: 20px;
+    border-style: dotted;
+    border-width: 10px;
+    border-color:yellow;
+    margin:20px;
+    padding: 100px;
+    width: fit-content;
+    height: fit-content;
+    list-style-type: square;
+    list-style-image: url('C:/Users/HARI RAGHAV/Downloads/N3BgXEI.jpg');
+
+}
+ul.five li{
+    background-color: yellow;
+}
+table,th,td{
+    border: black 5px solid;
+}
+table.vue,th.vue,td.vue{
+    border-collapse: collapse;
+    border: black 5px solid;
+    
+}
+/* 
+table,th,td{
+    border: solid red 5px;
+    border-collapse: collapse;
+} */
+
+tr:hover{
+    background-color: yellow;
+    
+} 

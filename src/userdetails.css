@@ -1,0 +1,80 @@
+
+.button{
+    border-style: none;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    margin-top: -50px;
+}
+
+
+.course{
+    width: fit-content;
+    height: fit-content;
+}
+.ud{
+    padding-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+.ud{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+.ud a{
+    text-decoration: none;
+}
+.changeprofile{
+    text-decoration:underline;
+    position:absolute; 
+    top:200px;
+    background-color: hotpink; 
+    height: 100px;
+    width:250px; 
+    color: white; 
+    left:850px;
+    padding-left: 65px;
+    padding-top: 40px;
+    display: none;
+    cursor: pointer;
+   
+}
+.change:hover .changeprofile{
+    display:block;
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+.coursetrack{
+    padding-left: 10px;
+}
+ .details{
+    margin-left: 30px;
+ }
+    .coursetrack{
+        display: none;
+    }
+    .ud{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        column-gap: 0px;
+    }
+    .dropdown{
+        display: none;
+    }
+    nav ul img{
+      height: 50px;
+      width: 400px;
+      margin-bottom: 20px;
+    }
+    .dropdown{
+        display:none;
+    }
+}

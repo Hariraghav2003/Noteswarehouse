@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Repeat Ex</title>
+    <style>
+        body{
+            color:black;
+            font-size: 30px;
+            background-image: url("../HTML/images.png");
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: 70px;
+         
+        }
+        a{
+            color: black;
+            display: contents;
+        }
+        dl.one{
+            background-image: url("../HTML/medium.webp");
+            background-size: 50px;
+            background-repeat: repeat-y;
+        }
+
+        dl.two{
+            background-image: url("../HTML/medium.webp");
+            background-size: 50px;
+            background-repeat: repeat-x;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Background Image Repeat</h1>
+    <p> 
+        The Background image is repeated by default in horizontal or vertical direction if the background image size is small,if we want to repeat the picture size in vertical or horizontal we can use <mark> background image repeat property </mark>,
+        <dl class="one">
+            <dt>Background image repeat-x</dt>
+            <dd>To repeat it horizontally</dd>
+        </dl>
+
+        <dl class="two">
+            <dt>Background image repeat-y</dt>
+            <dd>To repeat it vertically</dd>
+        </dl>
+        We can fix the postion of the background image in the right,left,top,bottom,center using <mark> background postion property </mark> the top right jpeg image is an example for using background-position property
+    </p>
+    <a href="../HTML/bgattach.html">Next>></a>
+</body>
+</html>

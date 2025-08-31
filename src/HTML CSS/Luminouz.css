@@ -1,0 +1,166 @@
+.container-fluid{
+    top:20px;
+    background-color: white;
+  }
+  .container-fluid ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    background-color: white;
+    align-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .container-fluid li{
+    padding-left: 20px;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a{
+      color: black;
+      text-decoration: none;
+  }
+  body{
+    margin: 30px;;
+  }
+  .homebutton{
+    color: white;
+    background-color: #F2618B;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  } 
+  .lights{
+    text-align: center;
+    margin: 20px;
+  }
+  .lights a{
+    color:#F2618B;
+    font-size: 20px;
+    font-weight: bold;
+  }  
+  .footercarousel{
+    margin: auto;
+  }
+  .try{
+    appearance: none;
+  }
+  footer{
+    background-color: #0E0D0D;
+    margin: 30px -30px -30px -30px;
+    padding: 100px;
+  }
+  footer a{
+  
+    color:#F2618B;
+    display: contents;
+  }
+  footer h5{
+  
+    color:#F2618B;
+
+  }
+  .product{
+    display: none;
+
+    position: absolute;
+    background-color: #F38DAB;
+    width:380px;
+    opacity: 0.9;
+    color:white;
+    text-align: center;
+    height: 150px;
+    top:140px;
+    
+  }
+  .product i{
+    margin-top: 30px; 
+    width: 100px;    
+    height: 23px;   
+    border-bottom: 2px solid whitesmoke; 
+    color: white;
+  }
+  .acbutton{
+    margin-top: 30px; 
+    width: 100px;    
+    height: 30px;   
+    border-bottom: 2px solid whitesmoke; 
+  }
+  .ac{
+    border-style:solid;
+    color:white;
+    border-width:3px ;
+    border-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom:  10px;
+
+  }
+
+
+  .card:hover .product{
+    display: block;
+  }
+  .ac:hover{
+    background-color: #F5F5F5;
+    color: #F2618B;
+  }
+  .acbutton:hover{
+    border-bottom: 3px solid #F2618B; 
+
+  }
+  .userdetail{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 0px 20px 0px ;
+  }
+  .card{
+    background-color: #F5F5F5;
+    width:380px;
+  }
+  .one{
+    margin-left: 650px;
+  }
+  .two{
+    margin-left: 650px;
+  }
+  .three{
+    margin-left: 660px;
+  }
+  .poster{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    background-image: url("spot-light-background_1284-4685.jpg" );
+    background-repeat: no-repeat;
+    height: 600px;
+    background-position: center;
+    margin-left: 0px;
+    margin-top: -30px;
+    padding-top: 300px;
+  }
+  .posterbutton{
+    background-color: #F2618B;
+    color: white;
+    border-radius:10px;
+    width: fit-content;
+    padding: 0px 10px 0px 10px;
+  }
+  a:hover{
+    color: white;
+  }
+  .products {
+    margin-left: 20px;
+  }

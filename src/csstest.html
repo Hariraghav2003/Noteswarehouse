@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS assessment</title>
+    <link rel="icon" type="image/x-icon" href="Favicon.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="csstest.js"> </script>
+    <link rel="stylesheet" href="./smdevice.css">
+</head>
+<style>
+    body{
+        background-image: url("test.jpg");
+        background-size: cover ;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .cssassessment{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 450px;
+        border:solid hotpink 5px;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 20px;
+        padding: 20px 20px 15px 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+       background-color: white;
+    }
+    .submitbutton{
+        border: none;
+        color: white;
+        background-color: black;
+        text-align:center;
+        width: 100%;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    @media screen and (min-width:481px) and (max-width:768px) {
+        .cssassessment{
+            margin-left: 20px;
+        }
+    }
+</style>
+<body>
+    <section class="cssassessment">
+        <center> <span style="font-weight: bold; font-size: larger;"> CSS Assessment <i class="fa-solid fa-book-open" style="color: hotpink;"></i></span>   </center> <br>
+
+        <form id="quizForm" onsubmit="ansvalidation(event)" >
+            <span>Q1) CSS stands for:</span> <br>
+            <input type="radio" id="q1op1" value="Cascade style sheets" name="q1ans">
+            <label for="q1op1">Cascade style sheets</label>
+            <br>
+            <input type="radio" id="q1op2" value="Color and style sheets" name="q1ans">
+            <label for="q1op2">Color and style sheets</label>
+            <br>
+            <input type="radio" id="q1op3" value="Cascade and Style sheet" name="q1ans">
+            <label for="q1op3">Cascade and Style sheet</label>
+            <br>
+            <input type="radio" id="q1op4" value="Cascading style sheets" name="q1ans" >
+            <label for="q1op4">Cascading style sheets</label>
+            <br>  <hr>
+
+            <span >Q2) The property in CSS used to change the background color of an element is - </span> <br>
+            <input type="radio" id="q2op1" value="bgcolor" name="q2ans">
+            <label for="q2op1">bgcolor</label>
+            <br>
+            <input type="radio" id="q2op2" value="color" name="q2ans">
+            <label for="q2op2">color</label>
+            <br>
+            <input type="radio" id="q2op3" value="background-color" name="q2ans">
+            <label for="q2op3">background-color </label>
+            <br>
+            <input type="radio" id="q2op4" value="All the above" name="q2ans" >
+            <label for="q2op4">All the above</label>
+            <br>  <hr>
+
+            <span>Q3) The CSS property used to control the element's font-size is - </span> <br>
+            <input type="radio" id="q3op1" value="fontsize" name="q3ans">
+            <label for="q3op1"> fontsize </label>
+            <br>
+            <input type="radio" id="q3op2" value="textsize" name="q3ans">
+            <label for="q3op2">textsize</label>
+            <br> 
+            <input type="radio" id="q3op3" value="text-size" name="q3ans">
+            <label for="q3op3">text-size</label>
+            <br>
+            <input type="radio" id="q3op4" value="font-size" name="q3ans" >
+            <label for="q3op4">font-size</label>
+            <br>  <hr>
+
+            <span>Q4) The HTML attribute used to define the inline styles is - </span> <br>
+            <input type="radio" id="q4op1" value="style" name="q4ans">
+            <label for="q4op1"> style </label>
+            <br>
+            <input type="radio" id="q4op2" value="styles" name="q4ans">
+            <label for="q4op2">styles</label>
+            <br>
+            <input type="radio" id="q4op3" value="class" name="q4ans">
+            <label for="q4op3">class</label>
+            <br>
+            <input type="radio" id="q4op4" value="id" name="q4ans" >
+            <label for="q4op4">id</label>
+            <br> <hr>
+
+            <span>Q5) choose a code to link css to html  </span> <br>
+            <input type="radio" id="q5op1" value="v1" name="q5ans">
+            <label for="q5op1"> < link rel="stylesheet" type="text/css" href="example.css" >  </label>
+            <br>
+            <input type="radio" id="q5op2" value="v2" name="q5ans">
+            <label for="q5op2"> < style src = example.css > </label>
+            <br>
+            <input type="radio" id="q5op3" value="v3" name="q5ans">
+            <label for="q5op3"> < stylesheet > example.css < /stylesheet > </label>
+            <br>
+            <input type="radio" id="q5op4" value="v5" name="q5ans" >
+            <label for="q5op4">< style href="example.css" ></label>
+            <br> <br>
+            <button type="submit" class="submitbutton">Submit Answer</button>
+        </form>
+    </section>
+   
+</body>
+</html>

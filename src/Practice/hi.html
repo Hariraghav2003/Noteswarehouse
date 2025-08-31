@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Layout</title>
+    <style>
+        /* Simple CSS for layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>HTML Layout with Sidebar</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                header {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 10px 0;
+                    text-align: center;
+                }
+        
+                nav {
+                    background-color: #333;
+                    color: white;
+                    padding: 10px;
+                    text-align: center;
+                }
+        
+                nav a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 0 15px;
+                }
+        
+                .container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 20px;
+                }
+        
+                main {
+                    flex: 70%;
+                    padding: 20px;
+                }
+        
+                aside {
+                    flex: 30%;
+                    background-color: #f4f4f4;
+                    padding: 20px;
+                }
+        
+                footer {
+                    background-color: #4CAF50;
+                    color: white;
+                    text-align: center;
+                    padding: 10px;
+                    position: fixed;
+                    width: 100%;
+                    bottom: 0;
+                }
+        
+                /* For responsive design */
+                @media screen and (max-width: 768px) {
+                    .container {
+                        flex-direction: column;
+                    }
+        
+                    aside {
+                        order: -1;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+        
+            <header>
+                <h1>My Website</h1>
+            </header>
+        
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        
+            <div class="container">
+                <main>
+                    <h2>Main Content</h2>
+                    <p>This is the main content of the website. It takes up more space than the sidebar.</p>
+                </main>
+        
+                <aside>
+                    <h2>Sidebar</h2>
+                    <p>This is some side content, such as links or additional information.</p>
+                </aside>
+            </div>
+        
+            <footer>
+                <p>Footer Content &copy; 2024</p>
+            </footer>
+        
+        </body>
+        </html>
+        
+        <h2>Welcome to My Website</h2>
+        <p>This is a basic example of an HTML layout with a header, navigation, main content, and a footer.</p>
+    </main>
+
+    <footer>
+        <p>Footer Content &copy; 2024</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+.usersignin{
+    flex-wrap: wrap;
+    display: flex;
+    align-items:center;
+
+  }
+  
+  .signinsearchbar{
+    border-style:solid;
+    border-color: black;
+
+    width: 300px;
+    
+    height: 30px;
+  }
+  .dropdowncontentu{
+    position: absolute;
+    background-color: #f9f9f9;
+  
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* padding: 12px 16px; */
+    z-index: 3;
+    width: 150px;
+    left: 1350px;
+    cursor: pointer;
+  }
+  .dropdowncontentu>a{
+  background-color:white;
+  color: black;
+  padding: 0px;
+  }
+  .signinbar{
+    margin-left: 90px;
+  }
+
+  @media screen and (min-width:481px) and (max-width:768px) {
+    .dropdowncontentu{
+      left: 300px;
+      top:140px;
+    }
+    .usersignin{
+      align-content:center;
+      margin-top: -10px;
+
+   
+    }
+    .s li{
+      padding-top: -10px;
+      margin-left:-10px;
+    }
+    .signinsearchbar{
+      border-style:solid;
+      border-color: black;
+      border-radius: 10px;
+      width: 200px;
+      
+      height: 30px;
+    }
+    
+    #uimg{
+      margin-left: -10px;
+      margin-top: 10px;
+    }
+
+  
+  }
